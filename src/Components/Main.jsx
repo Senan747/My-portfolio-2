@@ -1,8 +1,19 @@
 import React from 'react'
+import Introduce from '../Components/Introduce'
+import About from '../Components/About'
+import Education from '../Components/Education'
+import Skills from '../Components/Skills'
+import Projects from '../Components/Projects'
 
 function Main() {
   return (
-    <div>Main</div>
+    <div className="">
+      <Introduce />
+      <About />
+      <Education />
+      <Skills />
+      <Projects/>
+    </div>
   )
 }
 
