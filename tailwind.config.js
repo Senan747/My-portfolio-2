@@ -14,6 +14,7 @@ export default {
         'gega-black': '#1F1F1F',
         'gega-light': '#999999',
         'gega-green': '#28E98C',
+        'gega-dark': '#191919',
       },
     },
   },

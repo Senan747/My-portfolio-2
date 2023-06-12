@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <div className="bg-gega-black w-full h-full flex flex-row items-start ">
+    <div className="bg-gega-black w-full h-full flex flex-row items-start pt-10 ">
       <div className="basis-1/3" ><Profile /></div>
       <div className="basis-1/2"><Main /></div>
       <div className="basis-1/6"><Right /></div>
