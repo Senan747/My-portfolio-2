@@ -8,33 +8,33 @@ import {FaGripVertical} from 'react-icons/fa'
 
 function HombugerMenu() {
   return (
-    <div className='bg-gega-dark max-w-6xl'>
-        <p>Menu</p>
+    <div className='bg-gega-dark w-96 h-screen pl-32'>
+        <p className='pb-20 pt-20'>Menu</p>
 
         <ul>
-            <li>
-                <a href="">
-                    <AiOutlineHome  className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 cursor-pointer'/> <p>Home</p>
+            <li className='pb-8'>
+                <a href="" className="flex flex-row group">
+                    <AiOutlineHome className='text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4'/> <p className='text-gega-light group-hover:text-gega-white'>Home</p>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <CgProfile className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 cursor-pointer'/> <p>About</p>
+            <li className='pb-8'>
+                <a href="" className="flex flex-row group">
+                    <CgProfile className='text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4'/> <p className='text-gega-light group-hover:text-gega-white'>About</p>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <BsFillBriefcaseFill className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 cursor-pointer'/> <p>Education</p>
+            <li className='pb-8'>
+                <a href="" className="flex flex-row group">
+                    <BsFillBriefcaseFill className='text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4'/> <p className='text-gega-light group-hover:text-gega-white'>Education</p>
                 </a>
             </li>
-            <li>    
-                <a href="">
-                    <FaShapes className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 cursor-pointer'/> <p>Skills</p>
+            <li className='pb-8'>    
+                <a href="" className="flex flex-row group">
+                    <FaShapes className='text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4'/> <p className='text-gega-light group-hover:text-gega-white'>Skills</p>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <FaGripVertical className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 cursor-pointer'/> <p>Projects</p>
+            <li className='pb-8'>
+                <a href="" className="flex flex-row group">
+                    <FaGripVertical className='text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4'/> <p className='text-gega-light group-hover:text-gega-white'>Projects</p>
                 </a>
             </li>
         </ul>

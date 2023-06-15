@@ -3,7 +3,7 @@ import {AiOutlineHome} from 'react-icons/ai'
 
 function Introduce() {
   return (
-    <div>
+    <div className='pt-10'>
       <div className='flex flex-row flex-start items-center '>
         <div className="flex flex-row items-center border-2 border-gega-light p-1 rounded-xl space-x-1">
           <AiOutlineHome className='text-white mr-2' /> 
