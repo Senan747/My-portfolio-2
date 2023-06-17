@@ -35,7 +35,7 @@ function Right() {
         />
       </div>
       <div className='relative w-full h-full flex flex-col justify-center items-center' >
-        <ul className=" fixed border-2 border-gega-light rounded-3xl p-1">
+        <ul className=" fixed border-1 border-gega-light rounded-3xl p-1">
           <li className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer'><AiOutlineHome/> </li>
           <li className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer'><CgProfile /></li>
           <li className='text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer'><BsFillBriefcaseFill /></li>

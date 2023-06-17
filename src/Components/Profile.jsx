@@ -8,7 +8,7 @@ import {AiOutlineMail} from 'react-icons/ai'
 function Profile() {
   return (
     <div className='h-screen flex justify-center pt-10'>
-      <div className='max-w-sm border-2 border-gray-500 rounded-3xl text-gega-white p-8 fixed' >
+      <div className='max-w-sm border-1 border-gray-500 rounded-3xl text-gega-white p-8 fixed' >
           <div className="flex flex-row justify-between items-center mb-8">
               <p className='text-4xl font-bold'>Senan</p>
               <div>

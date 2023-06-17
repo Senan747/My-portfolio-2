@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        '75': '75%',
+        '50': '50%',
+        '30': '30%'
+      },
+      borderWidth: {
+        '1': '1px',
+        '0.5': '0.5px',
+      },
       colors: {
         'gega-red': '#bc1a45',
         'gega-melon': '#ffd369',
@@ -19,5 +28,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};
