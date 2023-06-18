@@ -6,6 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        pulse: {
+          '0%': { opacity: 0 },
+          '50%': { opacity: 0.5 },
+          '100%': { opacity: 1},   
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
       borderRadius: {
         '75': '75%',
         '50': '50%',
