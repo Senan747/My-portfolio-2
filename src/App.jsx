@@ -31,7 +31,7 @@ function App() {
         :
         (
           <div className="bg-gega-black w-full h-full flex flex-row items-start animate-[pulse_1s_ease-in-out]">
-            <div className="basis-1/3" ><Profile /></div>
+            <div className="basis-1/3 md:bg-red" ><Profile /></div>
             <div className="basis-1/2"><Main /></div>
             <div className="basis-1/6"><Right /></div>
           </div>

@@ -1,10 +1,13 @@
 import React from 'react'
 import {AiOutlineHome} from 'react-icons/ai'
 import {BsArrowDown} from 'react-icons/bs'
+import {BrowserRouter} from 'react-router-dom'
+import {HashLink as Link} from 'react-router-hash-link'
 
 function Introduce() {
   return (
-    <div className='pt-10 h-screen'>
+    <BrowserRouter>
+    <div className='pt-10 h-screen' id="introduce">
       <div className='flex flex-row flex-start items-center '>
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <AiOutlineHome className='text-white mr-2 ml-2' /> 
@@ -25,21 +28,19 @@ function Introduce() {
         
         <div className="flex justify-end pb-10">
           <div className="relative inline-block">
-            <a href="#" className="inline-block text-center">
+            <Link to="#projects" className="inline-block text-center">
               <img
                 src="../src/assets/round-text.png"
                 alt=""
                 className="block animate-[spin_4s_linear_infinite]"
               />
               <BsArrowDown className="text-gega-white text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-            </a>
+            </Link>
+          </div>
         </div>
-</div>
-
       </div>
-
-      
     </div>
+    </BrowserRouter>
   )
 }
 

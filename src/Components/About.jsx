@@ -3,7 +3,7 @@ import {CgProfile} from 'react-icons/cg'
 
 function About() {
   return (
-    <div>
+    <div id='about'>
       <div className='flex flex-row flex-start items-center mb-10 mt-10'>
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <CgProfile className='text-white mr-2 ml-2' /> 

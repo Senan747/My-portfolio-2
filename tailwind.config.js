@@ -13,9 +13,18 @@ export default {
           '100%': { opacity: 1},   
         },
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '0%, 100%': { transform: 'rotaate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
+        },
+        new: {
+          from: { top: '384px'},
+          to: { top: '0px'}
         }
+      },
+      backgroundImage: {
+        'quiz-project': "url('../src/assets/quiz-project.jpeg')",
+        'editor-project': "url('../src/assets/editor-project.jpeg')",
+        'travel-project': "url('../src/assets/travel-project.jpeg')"
       },
       borderRadius: {
         '75': '75%',
