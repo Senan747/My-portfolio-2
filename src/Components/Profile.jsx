@@ -18,7 +18,7 @@ function Profile() {
               
           </div>
           <div className='mb-4'>
-              <img src="../src/assets/senan1.jpeg" alt="" className='w-full grayscale rounded-3xl' />
+              <img src="../senan1.jpeg" alt="" className='w-full grayscale rounded-3xl' />
           </div>
           <div className="flex justify-center flex-row w-full">
             <a href="https://www.linkedin.com/in/senan-memmedov/" className='rounded-full border-2 border-spacing-2 border-gega-light text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2'>

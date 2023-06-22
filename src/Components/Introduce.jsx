@@ -30,7 +30,7 @@ function Introduce() {
           <div className="relative inline-block">
             <Link to="#projects" className="inline-block text-center">
               <img
-                src="../src/assets/round-text.png"
+                src="../round-text.png"
                 alt=""
                 className="block animate-[spin_4s_linear_infinite]"
               />
