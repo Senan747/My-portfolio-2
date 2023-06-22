@@ -5,6 +5,15 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        lg: '1140px',
+        xl: '1140px',
+        '2xl': '1140px',
+        md: '900px'
+      }
+    },
     extend: {
       keyframes: {
         pulse: {

@@ -1,10 +1,11 @@
 import React from 'react'
 import {CgProfile} from 'react-icons/cg'
 
+
 function About() {
   return (
-    <div id='about'>
-      <div className='flex flex-row flex-start items-center mb-10 mt-10'>
+    <div className='pl-3' id='about'>
+      <div className='flex flex-row flex-start items-center mb-10 mt-10 '>
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <CgProfile className='text-white mr-2 ml-2' /> 
           <p className="pr-2">About</p> 
@@ -14,11 +15,11 @@ function About() {
       <div className='flex flex-col flex-start items-center '>
         
         <div>
-          <p className='text-5xl pb-8'>
+          <p className='text-5xl pb-8 max-md:text-4xl'>
             It all started with <p className='text-gega-green'>a little bit of searching</p> 
           </p>
 
-          <p className='text-lg text-gega-light'>
+          <p className='whitespace-normal text-lg text-gega-light max-md:text-base text-justify text-wrap pr-3'>
             I became interested in IT branches, and after some research, I decided to pursue Front-end development. It was around November 2022.
             Front-end is a field that I have a deep passion for. Working in this field brings together several qualities that I value. Front-end allows me to create visually appealing and impactful interfaces that users can interact with.
             My love for Front-end has grown because it provides me with the opportunity to shape and design my creative ideas. Improving user experiences and creating simple, intuitive interfaces are among my primary goals. I am always eager to engage with people and help solve their problems.

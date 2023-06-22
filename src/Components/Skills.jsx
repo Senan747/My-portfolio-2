@@ -19,27 +19,27 @@ function Skills() {
       </div>
       <div>
         <ul className='flex flex-wrap mt-20 mb-20 items-center'>
-          <li className='border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
+          <li className='w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
             <AiFillHtml5 className='text-7xl text-gega-white group-hover:text-gega-green transition duration-300'/>
             <p className='mt-2 text-lg'>HTML</p>
           </li>
-          <li className='border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
+          <li className='w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
             <FaCss3Alt className='text-7xl text-gega-white group-hover:text-gega-green transition duration-300'/>
             <p className='mt-2 text-lg'>CSS</p>
           </li>
-          <li className='border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
+          <li className='w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
             <SiJavascript className='text-7xl text-gega-white group-hover:text-gega-green transition duration-300'/>
             <p className='mt-2 text-lg'>JS</p>
           </li>
-          <li className='border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
+          <li className='w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
             <FaVuejs className='text-7xl text-gega-white group-hover:text-gega-green transition duration-300'/>
             <p className='mt-2 text-lg'>VueJS</p>
           </li>
-          <li className='border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
+          <li className='w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
             <FaReact className='text-7xl text-gega-white group-hover:text-gega-green transition duration-300'/>
             <p className='mt-2 text-lg'>React</p>
           </li>
-          <li className='border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
+          <li className='w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
             <SiTailwindcss className='text-7xl text-gega-white group-hover:text-gega-green transition duration-300'/>
             <p className='mt-2 text-lg'>TailwindCSS</p>
           </li>

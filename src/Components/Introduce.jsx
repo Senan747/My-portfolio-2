@@ -7,7 +7,7 @@ import {HashLink as Link} from 'react-router-hash-link'
 function Introduce() {
   return (
     <BrowserRouter>
-    <div className='pt-10 h-screen' id="introduce">
+    <div className='pt-10 h-screen pl-3' id="introduce">
       <div className='flex flex-row flex-start items-center '>
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <AiOutlineHome className='text-white mr-2 ml-2' /> 
@@ -17,7 +17,7 @@ function Introduce() {
       <div className='h-96 flex flex-col  justify-around h-full'>
         
         <div className='w-full flex flex-col mb-10 text-gega-light'>
-          <p className='text-7xl pb-8'>
+          <p className='text-7xl pb-8 max-md:text-5xl'>
             I'm <p className='text-gega-green'>Senan Memmedov,</p>
             Front-end Developer.
           </p>
@@ -26,7 +26,7 @@ function Introduce() {
           </p>
         </div>
         
-        <div className="flex justify-end pb-10">
+        <div className="flex justify-end pb-10 pr-5">
           <div className="relative inline-block">
             <Link to="#projects" className="inline-block text-center">
               <img

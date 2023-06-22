@@ -12,7 +12,7 @@ function Projects() {
 
   return (
     
-    <div className='mt-24 mb-96' id="projects">
+    <div className='mt-24 mb-96 h-auto' id="projects">
        <div className='flex flex-row flex-start items-center mb-14 '>
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <FaGripVertical className='text-white mr-2 ml-2' /> 
@@ -32,8 +32,8 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className='flex flex-row justify-between w-full'>
-        <div className='bg-editor-project min-h-[370px] min-w-[370px] bg-cover relative'>
+      <div className='flex flex-row justify-between w-full flex-wrap'>
+        <div className='bg-editor-project h-[370px] min-w-[370px] bg-cover relative mb-10'>
           <span className='absolute bottom-10 left-10 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>JS</span>
           <span className='absolute bottom-10 left-40 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>HTML</span>
           <div className='w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000' style={style}>
@@ -41,7 +41,7 @@ function Projects() {
             <a href='https://senan-dev-image-editor.netlify.app/' target='_blank'><AiOutlineLink className='text-4xl ml-5 ' /></a>
           </div>
         </div>
-        <div className='bg-travel-project min-h-[370px] min-w-[370px] bg-cover relative'>
+        <div className='bg-travel-project h-[370px] min-w-[370px] bg-cover relative max-xl:max-h-[370px]'>
           <span className='absolute bottom-10 left-10 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>React</span>
           <span className='absolute bottom-10 left-40 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>SCSS</span>
           <div className='w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000' style={style}>
