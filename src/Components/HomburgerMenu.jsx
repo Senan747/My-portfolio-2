@@ -40,7 +40,7 @@ function HombugerMenu() {
         
 
         {showMenu && 
-          <div className='bg-gega-dark w-96 h-screen pl-32 transition duration-1000 relative left-0 top-0 animate-[wiggle_2s_ease-in-out_infinite] animate-[pulse_1s_ease-in-out] max-xl:fixed z-50' ref={menuRef}>
+          <div className='bg-gega-dark w-96 h-screen pl-32 transition duration-1000 relative left-0 top-0 animate-[wiggle_2s_ease-in-out_infinite] animate-[pulse_1s_ease-in-out] max-xl:fixed z-50 max-md:w-64' ref={menuRef}>
             <p className='pb-20 pt-20'>Menu</p>
 
             <ul>

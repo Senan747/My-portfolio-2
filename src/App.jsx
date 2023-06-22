@@ -35,11 +35,11 @@ function App() {
         :
         (
           <>
-            <div className='hidden max-xl:flex absolute'>
+            <div className='hidden max-xl:flex absolute z-20'>
               <HomeburgerMenu className="" />
             </div>
             
-            <div className="bg-gega-black w-full h-full flex flex-row max-xl:flex-col max-xl:items-center max-xl:pl-20 max-xl:pr-20 items-start animate-[pulse_1s_ease-in-out]">
+            <div className="bg-gega-black w-full h-full flex flex-row max-xl:flex-col max-xl:items-center max-xl:pl-20 max-xl:pr-20 max-md:pl-5 max-md:pr-5 items-start animate-[pulse_1s_ease-in-out]">
               <div className="container basis-1/3 max-xl:basis-1/2" >
                 <Profile />
               </div>
