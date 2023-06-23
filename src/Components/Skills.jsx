@@ -18,7 +18,7 @@ function Skills() {
         </div>
       </div>
       <div>
-        <ul className='flex flex-wrap mt-20 mb-20 items-center'>
+        <ul className='flex flex-wrap mt-20 mb-20 items-center justify-center'>
           <li className='w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300'>
             <AiFillHtml5 className='text-7xl text-gega-white group-hover:text-gega-green transition duration-300'/>
             <p className='mt-2 text-lg'>HTML</p>

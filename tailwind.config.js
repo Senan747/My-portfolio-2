@@ -28,7 +28,20 @@ export default {
         new: {
           from: { top: '384px'},
           to: { top: '0px'}
+        },
+        fadeIn: {
+          from: {
+            opacity: 0,
+            transform: 'translateY(-10px)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translateY(0)'
+          }
         }
+      },
+      fontFamily: {
+        Roboto: ['Roboto', 'sans-serif']
       },
       backgroundImage: {
         'quiz-project': "url('../src/assets/quiz-project.jpeg')",

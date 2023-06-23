@@ -6,4 +6,7 @@
   p{
     @apply text-zinc-50
   }
+  div, p, h1, h2{
+    @apply font-Roboto
+  }
 }
