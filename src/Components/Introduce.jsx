@@ -28,7 +28,7 @@ function Introduce() {
         
         <div className="flex justify-end pb-10 pr-5">
           <div className="relative inline-block">
-            <Link to="#projects" className="inline-block text-center">
+            <Link to="#projects" spy={true} smooth={true} offset={50} duration={550}  className="inline-block text-center">
               <img
                 src="../round-text.png"
                 alt=""
