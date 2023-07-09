@@ -23,7 +23,7 @@ function Projects() {
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
       >
-        <div className="bg-web-search-project bg-hover h-96 relative mb-10">
+        <div className="bg-web-search-project  bg-cover h-96 relative mb-10">
           <span className='absolute bottom-10 left-10 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>React</span>
           <span className='absolute bottom-10 left-40 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>TailwindCSS</span>
           <div className='w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000' style={style}>
