@@ -23,6 +23,14 @@ function Projects() {
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
       >
+        <div className="bg-web-search-project bg-hover h-96 relative mb-10">
+          <span className='absolute bottom-10 left-10 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>React</span>
+          <span className='absolute bottom-10 left-40 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>TailwindCSS</span>
+          <div className='w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000' style={style}>
+            <a href='https://github.com/Senan747/web-search' target="_blank"><AiFillGithub className='text-5xl ml-5' /></a>
+            <a href='https://web-search-mu.vercel.app/' target='_blank'><AiOutlineLink className='text-5xl ml-5 ' /></a>
+          </div>
+        </div>
         <div className="bg-quiz-project bg-hover h-96 relative">
           <span className='absolute bottom-10 left-10 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>Vue</span>
           <span className='absolute bottom-10 left-40 bg-gega-green text-gega-white pl-8 pr-8 pt-1 pb-1 font-bold rounded-lg'>CSS</span>
@@ -31,6 +39,7 @@ function Projects() {
             <a href='https://quiz-app-vue-js-ashen.vercel.app/' target='_blank'><AiOutlineLink className='text-5xl ml-5 ' /></a>
           </div>
         </div>
+        
       </div>
       <div className='flex flex-row justify-between w-full flex-wrap'>
         <div className='bg-editor-project h-[370px] min-w-[370px] bg-cover relative mb-10 max-md:w-full'>

@@ -46,7 +46,8 @@ export default {
       backgroundImage: {
         'quiz-project': "url('../src/assets/quiz-project.jpeg')",
         'editor-project': "url('../src/assets/editor-project.jpeg')",
-        'travel-project': "url('../src/assets/travel-project.jpeg')"
+        'travel-project': "url('../src/assets/travel-project.jpeg')",
+        'web-search-project': "url('../src/assets/websearch.jpg')"
       },
       borderRadius: {
         '75': '75%',
