@@ -13,7 +13,7 @@ function Skills() {
     <div className='mt-60' id='skills'>
       <div className='flex flex-row flex-start items-center '>
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
-          <FaShapes className='text-white mr-2 ml-2' /> 
+          <FaShapes className='text-white mx-2' /> 
           <p className='pr-2'>My skills</p> 
         </div>
       </div>

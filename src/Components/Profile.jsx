@@ -4,6 +4,7 @@ import {AiFillInstagram} from 'react-icons/ai'
 import {AiFillGithub} from 'react-icons/ai'
 import {IoMdCall} from 'react-icons/io'
 import {AiOutlineMail} from 'react-icons/ai'
+import {BiDownload} from 'react-icons/bi'
 
 function Profile() {
   return (
@@ -35,9 +36,14 @@ function Profile() {
             </a> 
           </div>
 
-          <a href="mailto: 1senanmemmedov@gmail.com" className='group flex justify-center m-8'>
+          <a href="mailto: 1senanmemmedov@gmail.com" className='group flex justify-center m-4'>
             <button className='flex flex-row justify-center text-black items-center border-2 border-gega-green bg-gega-green hover:bg-transparent p-2 w-full rounded-2xl  transition duration-300 '>
               <p className='text-black pr-3 group-hover:text-gega-green  transition duration-300'>HIRE ME!</p>  <AiOutlineMail className="group-hover:text-gega-green  transition duration-300 " />
+            </button>
+          </a>
+          <a href="../Senan-Memmedov___CV.pdf" className='group flex justify-center m-4' download>
+            <button className='flex flex-row justify-center text-black items-center border-2 bg-transparent border-gega-green bg-gega-green hover:border-gega-green hover:bg-gega-green p-2 w-full rounded-2xl  transition duration-300 '>
+              <p className='text-gega-green pr-3 group-hover:text-black  transition duration-300'>DOWNLOAD CV!</p>  <BiDownload className="text-gega-green transition duration-300 group-hover:text-black " />
             </button>
           </a>
       </div>

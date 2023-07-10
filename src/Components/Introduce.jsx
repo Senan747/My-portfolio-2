@@ -10,7 +10,7 @@ function Introduce() {
     <div className='pt-10 h-screen pl-3' id="introduce">
       <div className='flex flex-row flex-start items-center '>
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
-          <AiOutlineHome className='text-white mr-2 ml-2' /> 
+          <AiOutlineHome className='text-white mx-2' /> 
           <p className='pr-2'>Introduce</p> 
         </div>
       </div>
