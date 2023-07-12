@@ -50,12 +50,12 @@ function Projects() {
             <a href='https://senan-dev-image-editor.netlify.app/' target='_blank'><AiOutlineLink className='text-4xl ml-5 ' /></a>
           </div>
         </div>
-        <div className='bg-travel-project h-[370px] min-w-[370px] bg-cover relative max-xl:max-h-[370px] max-md:w-full'>
+        <div className='bg-compiler-project h-[370px] min-w-[370px] bg-cover relative max-xl:max-h-[370px] max-md:w-full'>
           <span className='absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1  font-bold rounded-lg'>React</span>
-          <span className='absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg'>SCSS</span>
+          <span className='absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg'>TailwindCSS</span>
           <div className='w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000' style={style}>
-            <a href='https://github.com/Senan747/travel-ecommerce' target="_blank"><AiFillGithub className='text-4xl ml-5' /></a>
-            <a href='https://travel-ecommerce.vercel.app/' target='_blank'><AiOutlineLink className='text-4xl ml-5 ' /></a>
+            <a href='https://github.com/Senan747/compiler/' target="_blank"><AiFillGithub className='text-4xl ml-5' /></a>
+            <a href='https://compiler-ashen.vercel.app/' target='_blank'><AiOutlineLink className='text-4xl ml-5 ' /></a>
           </div>
         </div>
       </div>
