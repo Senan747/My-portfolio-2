@@ -24,7 +24,7 @@ function Education() {
           <div className="absolute left-1.5 top-0 h-56 border-l-0.5 border-gega-light "></div>
         </div>
         <div className="pl-8 pb-10">
-          <p className="pb-5 text-xl group-hover:text-gega-green">2021 - ~</p>
+          <p className="pb-5 text-lg group-hover:text-gega-green text-gega-light">2021 - ~</p>
           <p className="pb-5 text-lg">
             University: Academy of State Customs Committee
           </p>
@@ -37,7 +37,7 @@ function Education() {
           <div className="absolute left-1.5 top-0 h-[300px] border-l-0.5 border-gega-light "></div>
         </div>
         <div className="pl-8 pb-10">
-          <p className="pb-10 text-xl group-hover:text-gega-green">
+          <p className="pb-10 text-lg group-hover:text-gega-green text-gega-light">
             20.03.2022 - 01.10.2022
           </p>
           <p className="pb-5 text-base">Volunteer</p>
@@ -51,7 +51,7 @@ function Education() {
           <div className="absolute left-1.5 top-0 h-56 border-l-0.5 border-gega-light "></div>
         </div>
         <div className="pl-8">
-          <p className="pb-10 text-xl group-hover:text-gega-green">
+          <p className="pb-10 text-lg group-hover:text-gega-green text-gega-light">
             18.04.2023 - ~
           </p>
           <p className="pb-5 text-base">Volunteer</p>
