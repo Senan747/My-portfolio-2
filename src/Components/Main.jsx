@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect } from 'react'
-import Introduce from '../Components/Introduce'
-import About from '../Components/About'
-import Education from '../Components/Education'
-import Skills from '../Components/Skills'
-import Projects from '../Components/Projects'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+import React, { useState, useRef, useEffect } from "react";
+import Introduce from "../Components/Introduce";
+import About from "../Components/About";
+import Education from "../Components/Education";
+import Skills from "../Components/Skills";
+import Projects from "../Components/Projects";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Main() {
   const [refIntroduce, inViewIntroduce] = useInView({
