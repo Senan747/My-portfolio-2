@@ -7,6 +7,7 @@ import { FaVuejs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FiFigma } from "react-icons/fi";
 import { SiTailwindcss } from "react-icons/si";
+import { SiRedux } from 'react-icons/si'
 
 function Skills() {
   return (
@@ -46,6 +47,10 @@ function Skills() {
           <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
             <FiFigma className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
             <p className="mt-2 text-lg">Figma</p>
+          </li>
+          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
+            <SiRedux className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+            <p className="mt-2 text-lg">Redux</p>
           </li>
         </ul>
       </div>

@@ -63,7 +63,7 @@ function Profile() {
           </button>
         </a>
         <a
-          href="../Senan-Memmedov___CV.pdf"
+          href="../Senan-Memmedov_CV.pdf"
           className="group flex justify-center m-4"
           download
         >
