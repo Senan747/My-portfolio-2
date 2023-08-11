@@ -42,6 +42,29 @@ function Projects() {
             </a>
           </div>
         </div>
+
+        <div className="bg-trendsway-project bg-cover h-96 relative mb-10">
+          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
+            React
+          </span>
+          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
+            TailwindCSS
+          </span>
+          <div
+            className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000"
+            style={style}
+          >
+            <a
+              href="https://github.com/Senan747/trendsway"
+              target="_blank"
+            >
+              <AiFillGithub className="text-5xl ml-5" />
+            </a>
+            <a href="https://trendsway.vercel.app/" target="_blank">
+              <AiOutlineLink className="text-5xl ml-5 " />
+            </a>
+          </div>
+        </div>
         <div className="bg-quiz-project bg-hover h-96 relative">
           <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
             Vue
