@@ -10,14 +10,14 @@ function Profile() {
   return (
     <div className="h-screen max-xl:h-auto flex justify-center pt-10 font-Roboto">
       <div className="max-w-sm max-xl:max-w-lg h-auto border-1 border-gray-500 rounded-3xl text-gega-white p-8 fixed max-xl:relative">
-        <div className="flex flex-row justify-between items-center mb-8">
+        <div className="flex flex-row justify-between items-center mb-5">
           <p className="text-4xl font-bold">Senan</p>
           <div>
             <p className="text-right">Front-end</p>
             <p className="text-xl">Developer</p>
           </div>
         </div>
-        <div className="mb-4">
+        <div className="mb-2">
           <img
             src="../senan1.jpeg"
             alt=""
@@ -63,8 +63,8 @@ function Profile() {
           </button>
         </a>
         <a
-          href="../Senan_Memmedov-CV.pdf"
-          className="group flex justify-center m-4"
+          href="../Senan-Memmedov__CV_Frontend-Developer.pdf"
+          className="group flex justify-center mx-4 my-1"
           download
         >
           <button className="flex flex-row justify-center text-black items-center border-2 bg-transparent border-gega-green bg-gega-green hover:border-gega-green hover:bg-gega-green p-2 w-full rounded-2xl  transition duration-300 ">
