@@ -10,6 +10,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
+import { SiMui } from "react-icons/si";
 
 function Skills() {
   return (
@@ -42,9 +43,9 @@ function Skills() {
             <TbBrandNextjs className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
             <p className="mt-2 text-lg">Next.js</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
+          <li className="w-[200px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
             <SiRedux className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
-            <p className="mt-2 text-lg">Redux</p>
+            <p className="mt-2 text-lg">RTK & RTK query</p>
           </li>
           <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
             <FaVuejs className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
@@ -57,6 +58,10 @@ function Skills() {
           <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
             <SiTailwindcss className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
             <p className="mt-2 text-lg">TailwindCSS</p>
+          </li>
+          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
+            <SiMui className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+            <p className="mt-2 text-lg">Material UI</p>
           </li>
           <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
             <FiFigma className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
