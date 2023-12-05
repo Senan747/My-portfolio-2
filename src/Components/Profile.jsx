@@ -5,8 +5,11 @@ import { AiFillGithub } from "react-icons/ai";
 import { IoMdCall } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiDownload } from "react-icons/bi";
+import { FaMedium } from "react-icons/fa6";
 
 function Profile() {
+  const linkStyle =
+    "rounded-full border-2 border-spacing-2 border-gega-light text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2";
   return (
     <div className="h-screen max-xl:h-auto flex justify-center pt-10 font-Roboto">
       <div className="max-w-sm max-xl:max-w-lg h-auto border-1 border-gray-500 rounded-3xl text-gega-white p-8 fixed max-xl:relative">
@@ -27,21 +30,24 @@ function Profile() {
         <div className="flex justify-center flex-row w-full">
           <a
             href="https://www.linkedin.com/in/senan-memmedov/"
-            className="rounded-full border-2 border-spacing-2 border-gega-light text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2"
+            className={`${linkStyle}`}
           >
             <AiFillLinkedin className="text-4xl p-2" />
           </a>
           <a
             href="https://www.instagram.com/senanthesad/?igshid=ZDdkNTZiNTM%3D"
-            className="rounded-full border-2 border-spacing-2 border-gega-light text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2"
+            className={`${linkStyle}`}
           >
             <AiFillInstagram className="text-4xl p-2" />
           </a>
-          <a
-            href="https://github.com/Senan747"
-            className="rounded-full border-2 border-spacing-2 border-gega-light text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2"
-          >
+          <a href="https://github.com/Senan747" className={`${linkStyle}`}>
             <AiFillGithub className="text-4xl p-2" />
+          </a>
+          <a
+            href="https://medium.com/@1senanmemmedov"
+            className={`${linkStyle}`}
+          >
+            <FaMedium className="text-4xl p-2" />
           </a>
           <a
             href="tel:+994507832995"

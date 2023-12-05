@@ -21,7 +21,7 @@ function About() {
             <p className="text-gega-green">a little bit of searching</p>
           </p>
 
-          <p className="whitespace-normal text-lg text-gega-light max-md:text-base text-justify text-wrap pr-3">
+          <p className="whitespace-normal text-lg text-gega-light max-md:text-base text-justify text-wrap pr-3 font-Inter">
             I became interested in IT branches, and after some research, I
             decided to pursue Front-end development. It was around November
             2022. Front-end is a field that I have a deep passion for. Working

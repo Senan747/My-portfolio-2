@@ -13,6 +13,12 @@ import { SiTypescript } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 
 function Skills() {
+  const listStyle =
+    "w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300";
+
+  const iconStyle =
+    "text-7xl text-gega-white group-hover:text-gega-green transition duration-300";
+
   return (
     <div className="mt-60" id="skills">
       <div className="flex flex-row flex-start items-center ">
@@ -22,49 +28,49 @@ function Skills() {
         </div>
       </div>
       <div>
-        <ul className="flex flex-wrap mt-20 mb-20 items-center justify-center">
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <AiFillHtml5 className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+        <ul className="flex flex-wrap my-20 items-center justify-center">
+          <li className={`${listStyle}`}>
+            <AiFillHtml5 className={`${iconStyle}`} />
             <p className="mt-2 text-lg">HTML</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <FaCss3Alt className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <FaCss3Alt className={`${iconStyle}`} />
             <p className="mt-2 text-lg">CSS</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <SiJavascript className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <SiJavascript className={`${iconStyle}`} />
             <p className="mt-2 text-lg">JS</p>
           </li>{" "}
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <FaReact className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <FaReact className={`${iconStyle}`} />
             <p className="mt-2 text-lg">React</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <TbBrandNextjs className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <TbBrandNextjs className={`${iconStyle}`} />
             <p className="mt-2 text-lg">Next.js</p>
           </li>
-          <li className="w-[200px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <SiRedux className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`w-[200px] ${listStyle}`}>
+            <SiRedux className={`${iconStyle}`} />
             <p className="mt-2 text-lg">RTK & RTK query</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <FaVuejs className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <FaVuejs className={`${iconStyle}`} />
             <p className="mt-2 text-lg">VueJS</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <SiTypescript className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <SiTypescript className={`${iconStyle}`} />
             <p className="mt-2 text-lg">TypeScript</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <SiTailwindcss className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <SiTailwindcss className={`${iconStyle}`} />
             <p className="mt-2 text-lg">TailwindCSS</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <SiMui className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <SiMui className={`${iconStyle}`} />
             <p className="mt-2 text-lg">Material UI</p>
           </li>
-          <li className="w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300">
-            <FiFigma className="text-7xl text-gega-white group-hover:text-gega-green transition duration-300" />
+          <li className={`${listStyle}`}>
+            <FiFigma className={`${iconStyle}`} />
             <p className="mt-2 text-lg">Figma</p>
           </li>
         </ul>

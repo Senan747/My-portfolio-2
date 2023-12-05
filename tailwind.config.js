@@ -18,10 +18,7 @@ export default {
           "50%": { opacity: 0.5 },
           "100%": { opacity: 1 },
         },
-        wiggle: {
-          "0%, 100%": { transform: "rotaate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
-        },
+   
         new: {
           from: { top: "384px" },
           to: { top: "0px" },
@@ -39,6 +36,7 @@ export default {
       },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "quiz-project": "url('../src/assets/quiz-project.jpeg')",
