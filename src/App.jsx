@@ -40,7 +40,7 @@ function App() {
           </div>
 
           <div className="bg-gega-black w-full h-full flex flex-row max-xl:flex-col max-xl:items-center max-xl:px-20 max-md:px-5 items-start animate-[pulse_1s_ease-in-out]">
-            <div className="container basis-1/3 max-xl:basis-1/2">
+            <div className="container basis-1/3 max-xl:basis-1/2 flex h-screen items-center justify-center">
               <Profile />
             </div>
 

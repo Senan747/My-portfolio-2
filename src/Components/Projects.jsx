@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaGripVertical } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineLink } from "react-icons/ai";
-import {FaArrowRight} from 'react-icons/fa'
+import { FaArrowRight } from "react-icons/fa";
 
 function Projects() {
   const [isHover, setIsHover] = useState(false);
@@ -24,35 +24,65 @@ function Projects() {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
-        <div className="bg-web-search-project  bg-cover h-96 relative mb-10">
-          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
-            React
-          </span>
-          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
-            TailwindCSS
-          </span>
-          <div
-            className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000"
-            style={style}
-          >
-            <a href="https://github.com/Senan747/web-search" target="_blank">
-              <AiFillGithub className="text-5xl ml-5" />
-            </a>
-            <a href="https://web-search-mu.vercel.app/" target="_blank">
-              <AiOutlineLink className="text-5xl ml-5 " />
-            </a>
+        <div className="flex flex-row justify-between items-center w-full flex-wrap">
+          <div className="bg-web-search-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10">
+            <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+              React
+            </span>
+            <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+              TailwindCSS
+            </span>
+            <div
+              className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
+              style={style}
+            >
+              <a href="https://github.com/Senan747/web-search" target="_blank">
+                <AiFillGithub className="text-5xl ml-5" />
+              </a>
+              <a href="https://web-search-mu.vercel.app/" target="_blank">
+                <AiOutlineLink className="text-5xl ml-5 " />
+              </a>
+            </div>
+          </div>
+          <div className="bg-artist-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10">
+            <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+              React
+            </span>
+            <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+              TailwindCSS
+            </span>
+            <span className="absolute bottom-1 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+              MUI
+            </span>
+            <div
+              className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
+              style={style}
+            >
+              <a
+                href="https://github.com/Senan747/artist-portfolio"
+                target="_blank"
+              >
+                <AiFillGithub className="text-5xl ml-5" />
+              </a>
+              <a
+                href="https://artist-portfolio-swart.vercel.app/"
+                target="_blank"
+              >
+                <AiOutlineLink className="text-5xl ml-5 " />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="bg-trendsway-project bg-cover h-96 relative mb-10">
-          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
+        <div className="bg-trendsway-project bg-cover h-96 rounded-xl relative mb-10">
+          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
             React
           </span>
-          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
+          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
             TailwindCSS
           </span>
           <div
-            className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000"
+            className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
             style={style}
           >
             <a href="https://github.com/Senan747/trendsway" target="_blank">
@@ -65,15 +95,15 @@ function Projects() {
         </div>
       </div>
       <div className="flex flex-row justify-between w-full flex-wrap">
-        <div className="bg-compiler-project h-[370px] min-w-[370px] bg-cover relative max-xl:max-h-[370px] max-md:w-full">
-          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1  font-bold rounded-lg">
+        <div className="bg-compiler-project h-96 w-[50%] bg-cover relative max-xl:max-h-[370px] max-md:w-full rounded-xl">
+          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1  font-bold rounded-lg text-xs">
             React
           </span>
-          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg">
+          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
             TailwindCSS
           </span>
           <div
-            className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000"
+            className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
             style={style}
           >
             <a href="https://github.com/Senan747/compiler/" target="_blank">
@@ -85,9 +115,14 @@ function Projects() {
           </div>
         </div>
         <div className="flex flex-row justify-center items-center">
-          <a href="https://github.com/Senan747?tab=repositories" className="flex flex-row justify-center items-center rounded-[100%] border-2 mr-20 py-12 px-3 hover:border-gega-green group transition duration-300">
-            <p className="group-hover:text-gega-green transition duration-300">For more</p>
-            <FaArrowRight className="text-white ml-4 group-hover:text-gega-green transition duration-300"/>
+          <a
+            href="https://github.com/Senan747?tab=repositories"
+            className="flex flex-row justify-center items-center rounded-[100%] border-2 mr-20 py-12 px-3 hover:border-gega-green group transition duration-300"
+          >
+            <p className="group-hover:text-gega-green transition duration-300">
+              For more
+            </p>
+            <FaArrowRight className="text-white ml-4 group-hover:text-gega-green transition duration-300" />
           </a>
         </div>
       </div>
