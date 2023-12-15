@@ -12,7 +12,7 @@ function Projects() {
   };
 
   return (
-    <div className="mt-24 mb-96 h-auto" id="projects">
+    <div className="mt-24 h-auto mx-10" id="projects">
       <div className="flex flex-row flex-start items-center mb-14 ">
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <FaGripVertical className="text-white mx-2" />
@@ -24,12 +24,12 @@ function Projects() {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
       >
-        <div className="flex flex-row justify-between items-center w-full flex-wrap">
-          <div className="bg-web-search-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10">
-            <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+        <div className="flex flex-row justify-between items-center w-full flex-wrap max-md:flex-col ">
+          <div className="bg-web-search-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10 max-md:w-full">
+            <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
               React
             </span>
-            <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+            <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
               TailwindCSS
             </span>
             <div
@@ -44,15 +44,15 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="bg-artist-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10">
-            <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+          <div className="bg-artist-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10 max-md:w-full">
+            <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
               React
             </span>
-            <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
-              TailwindCSS
-            </span>
-            <span className="absolute bottom-1 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+            <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
               MUI
+            </span>
+            <span className="absolute bottom-1 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
+              TailwindCSS
             </span>
             <div
               className="w-full h-full absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
@@ -75,10 +75,10 @@ function Projects() {
         </div>
 
         <div className="bg-trendsway-project bg-cover h-96 rounded-xl relative mb-10">
-          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+          <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
             React
           </span>
-          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+          <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
             TailwindCSS
           </span>
           <div
@@ -96,10 +96,10 @@ function Projects() {
       </div>
       <div className="flex flex-row justify-between w-full flex-wrap">
         <div className="bg-compiler-project h-96 w-[50%] bg-cover relative max-xl:max-h-[370px] max-md:w-full rounded-xl">
-          <span className="absolute bottom-10 left-10 bg-gega-green text-gega-white px-8 py-1  font-bold rounded-lg text-xs">
+          <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1  font-bold rounded-lg text-xs">
             React
           </span>
-          <span className="absolute bottom-10 left-40 bg-gega-green text-gega-white px-8 py-1 font-bold rounded-lg text-xs">
+          <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
             TailwindCSS
           </span>
           <div
@@ -114,7 +114,7 @@ function Projects() {
             </a>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center max-md:w-full max-md:mt-10">
           <a
             href="https://github.com/Senan747?tab=repositories"
             className="flex flex-row justify-center items-center rounded-[100%] border-2 mr-20 py-12 px-3 hover:border-gega-green group transition duration-300"

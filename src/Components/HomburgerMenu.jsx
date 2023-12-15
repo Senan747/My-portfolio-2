@@ -1,13 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import React from "react";
 import { FaGripVertical } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
 import { AiOutlineHome } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { FaShapes } from "react-icons/fa";
-import { motion } from "framer-motion";
 import { Drawer } from "@mui/material";
+import { FaSheetPlastic } from "react-icons/fa6";
 
 function HombugerMenu({ open, onClose }) {
   return (
@@ -87,6 +86,21 @@ function HombugerMenu({ open, onClose }) {
               <FaGripVertical className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
                 Projects
+              </p>
+            </Link>
+          </li>
+          <li className="pb-8">
+            <Link
+              to="#blogs"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="flex flex-row group"
+            >
+              <FaSheetPlastic className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
+              <p className="text-gega-light group-hover:text-gega-white">
+                Blogs
               </p>
             </Link>
           </li>

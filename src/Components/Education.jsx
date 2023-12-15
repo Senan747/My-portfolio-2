@@ -35,7 +35,7 @@ function renderEducationItem(padding, date, title, organization, role) {
         <div className="absolute left-0 top-0 bg-gega-light rounded-full w-3 h-3 z-10 group-hover:bg-gega-green"></div>
         <div className="absolute left-1.5 top-0 h-[240px] border-l-0.5 border-gega-light"></div>
       </div>
-      <div className="pl-8 pb-10">
+      <div className="pl-8 pb-5">
         <p className="pb-5 text-lg group-hover:text-gega-green text-gega-light">{date}</p>
         <p className="pb-5 text-base">{title}</p>
         <p className="pb-5 text-lg">{organization}</p>

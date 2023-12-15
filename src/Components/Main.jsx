@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect } from "react";
-import Introduce from "../Components/Introduce";
-import About from "../Components/About";
-import Education from "../Components/Education";
-import Skills from "../Components/Skills";
-import Projects from "../Components/Projects";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import Introduce from "./Introduce";
+import About from "./About";
+import Education from "./Education";
+import Skills from "./Skills";
+import Projects from "./Projects";
 import { useInView } from "react-intersection-observer";
+import Blogs from "./Blogs";
 
 function Main() {
   const [refIntroduce, inViewIntroduce] = useInView({
@@ -29,6 +29,10 @@ function Main() {
     threshold: 0.1,
   });
 
+  const [refBlogs, inViewBlogs] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   const animateElement = (elementRef, inView, animationVariants) => {
     const element = elementRef.current;
     if (element && inView) {
@@ -62,9 +66,14 @@ function Main() {
     animateElement(refProjects, inViewProjects, animationVariants);
   }, [refProjects, inViewProjects]);
 
+  useEffect(() => {
+    const animationVariants = { opacity: 1, y: 0 };
+    animateElement(refBlogs, inViewBlogs, animationVariants);
+  }, [refBlogs, inViewBlogs]);
+
   return (
     <>
-      <div ref={refIntroduce}>
+      <div ref={refIntroduce} className="">
         <Introduce />
       </div>
 
@@ -82,6 +91,10 @@ function Main() {
 
       <div ref={refProjects}>
         <Projects />
+      </div>
+
+      <div ref={refBlogs}>
+        <Blogs />
       </div>
     </>
   );

@@ -11,7 +11,7 @@ function Profile() {
   const linkStyle =
     "rounded-full border-2 border-spacing-2 border-gega-light text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2";
   return (
-    <div className="h-screen flex justify-center items-center font-Roboto">
+    <div className="h-screen flex justify-center items-center font-Roboto max-xl:mt-10">
       <div className="max-w-sm max-xl:max-w-lg h-auto border-1 border-gray-500 rounded-3xl text-gega-white p-8 fixed max-xl:relative">
         <div className="flex flex-row justify-between items-center mb-5">
           <p className="text-4xl font-bold">Senan</p>

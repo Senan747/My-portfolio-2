@@ -14,10 +14,10 @@ import { SiMui } from "react-icons/si";
 
 function Skills() {
   const listStyle =
-    "w-[150px] border-1 border-gega-light p-6 ml-10 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300";
+    "w-[150px] border-1 border-gega-light p-6 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300 max-md:w-[120px] max-md:p-3";
 
   const iconStyle =
-    "text-7xl text-gega-white group-hover:text-gega-green transition duration-300";
+    "text-7xl text-gega-white group-hover:text-gega-green transition duration-300 max-md:text-5xl";
 
   return (
     <div className="mt-60" id="skills">
@@ -28,50 +28,50 @@ function Skills() {
         </div>
       </div>
       <div>
-        <ul className="flex flex-wrap my-20 items-center justify-center">
+        <ul className="flex flex-wrap my-20 items-center justify-center gap-5 max-md:my-10">
           <li className={`${listStyle}`}>
             <AiFillHtml5 className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">HTML</p>
+            <p className="mt-2 text-lg max-md:text-sm">HTML</p>
           </li>
           <li className={`${listStyle}`}>
             <FaCss3Alt className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">CSS</p>
+            <p className="mt-2 text-lg max-md:text-sm">CSS</p>
           </li>
           <li className={`${listStyle}`}>
             <SiJavascript className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">JS</p>
+            <p className="mt-2 text-lg max-md:text-sm">JS</p>
           </li>{" "}
           <li className={`${listStyle}`}>
             <FaReact className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">React</p>
+            <p className="mt-2 text-lg max-md:text-sm">React</p>
           </li>
           <li className={`${listStyle}`}>
             <TbBrandNextjs className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">Next.js</p>
+            <p className="mt-2 text-lg max-md:text-sm">Next.js</p>
           </li>
           <li className={`w-[200px] ${listStyle}`}>
             <SiRedux className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">RTK & RTK query</p>
+            <p className="mt-2 text-lg max-md:text-sm">RTK & RTKQ</p>
           </li>
           <li className={`${listStyle}`}>
             <FaVuejs className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">VueJS</p>
+            <p className="mt-2 text-lg max-md:text-sm">VueJS</p>
           </li>
           <li className={`${listStyle}`}>
             <SiTypescript className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">TypeScript</p>
+            <p className="mt-2 text-lg max-md:text-sm">TypeScript</p>
           </li>
           <li className={`${listStyle}`}>
             <SiTailwindcss className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">TailwindCSS</p>
+            <p className="mt-2 text-lg max-md:text-sm">TailwindCSS</p>
           </li>
           <li className={`${listStyle}`}>
             <SiMui className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">Material UI</p>
+            <p className="mt-2 text-lg max-md:text-sm">Material UI</p>
           </li>
           <li className={`${listStyle}`}>
             <FiFigma className={`${iconStyle}`} />
-            <p className="mt-2 text-lg">Figma</p>
+            <p className="mt-2 text-lg max-md:text-sm">Figma</p>
           </li>
         </ul>
       </div>
