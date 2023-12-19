@@ -25,7 +25,7 @@ function Projects() {
         onMouseLeave={() => setIsHover(false)}
       >
         <div className="flex flex-row justify-between items-center w-full flex-wrap max-md:flex-col ">
-          <div className="bg-web-search-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10 max-md:w-full">
+          <div className="bg-web-search-project w-[48%]  bg-cover h-96 max-md:h-80 rounded-xl relative mb-10 max-md:w-full">
             <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
               React
             </span>
@@ -44,7 +44,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <div className="bg-artist-project w-[48%]  bg-cover h-96 rounded-xl relative mb-10 max-md:w-full">
+          <div className="bg-artist-project w-[48%]  bg-cover h-96 max-md:h-80 rounded-xl relative mb-10 max-md:w-full">
             <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
               React
             </span>
@@ -74,7 +74,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="bg-trendsway-project bg-cover h-96 rounded-xl relative mb-10">
+        <div className="bg-trendsway-project bg-cover h-96 max-md:h-80 rounded-xl relative mb-10">
           <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
             React
           </span>
@@ -95,7 +95,7 @@ function Projects() {
         </div>
       </div>
       <div className="flex flex-row justify-between w-full flex-wrap">
-        <div className="bg-compiler-project h-96 w-[50%] bg-cover relative max-xl:max-h-[370px] max-md:w-full rounded-xl">
+        <div className="bg-compiler-project h-96 max-md:h-80 w-[50%] bg-cover relative max-xl:max-h-[370px] max-md:w-full rounded-xl">
           <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1  font-bold rounded-lg text-xs">
             React
           </span>

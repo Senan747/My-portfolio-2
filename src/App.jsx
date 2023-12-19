@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 import "./App.css";
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -17,10 +17,9 @@ function App() {
   };
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }, []);
 
   return (
