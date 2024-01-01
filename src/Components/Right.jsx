@@ -26,56 +26,32 @@ function Right() {
       </div>
       <div className="relative w-full h-full flex flex-col justify-center items-center">
         <ul className=" fixed border-1 border-gega-light rounded-3xl p-1">
-          <Link
-            to="#introduce"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={550}
-          >
+          <Link to="#introduce" smooth={true} offset={50} duration={550}>
             <li className="text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer">
               <AiOutlineHome />{" "}
             </li>{" "}
           </Link>
-          <Link to="#about" spy={true} smooth={true} offset={50} duration={550}>
+          <Link to="#about" smooth={true} offset={50} duration={550}>
             <li className="text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer">
               <CgProfile />
             </li>
           </Link>
-          <Link
-            to="#education"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={550}
-          >
+          <Link to="#education" smooth={true} offset={50} duration={550}>
             <li className="text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer">
               <BsFillBriefcaseFill />
             </li>
           </Link>
-          <Link
-            to="#skills"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={550}
-          >
+          <Link to="#skills" smooth={true} offset={50} duration={550}>
             <li className="text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer">
               <FaShapes />
             </li>
           </Link>
-          <Link
-            to="#projects"
-            spy={true}
-            smooth={true}
-            offset={50}
-            duration={550}
-          >
+          <Link to="#projects" smooth={true} offset={50} duration={550}>
             <li className="text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer">
               <FaGripVertical />
             </li>
           </Link>
-          <Link to="#blogs" spy={true} smooth={true} offset={50} duration={550}>
+          <Link to="#blogs" smooth={true} offset={50} duration={550}>
             <li className="text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer">
               <FaSheetPlastic />
             </li>

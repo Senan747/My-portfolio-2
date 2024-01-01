@@ -18,7 +18,7 @@ function About() {
         <div>
           <p className="text-5xl pb-8 max-md:text-4xl">
             It all started with{" "}
-            <p className="text-gega-green">a little bit of searching</p>
+            <span className="text-gega-green">a little bit of searching</span>
           </p>
 
           <p className="whitespace-normal text-lg text-gega-light max-md:text-base text-justify text-wrap pr-3 font-Inter">

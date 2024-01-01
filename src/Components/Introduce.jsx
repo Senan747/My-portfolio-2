@@ -15,7 +15,7 @@ function Introduce() {
       <div className="flex flex-col  justify-around h-full">
         <div className="w-full flex flex-col mb-10 max-md:mb-0 text-gega-light">
           <p className="text-7xl pb-8 max-md:text-5xl">
-            I'm <p className="text-gega-green">Senan Memmedov,</p>
+            I'm <span className="text-gega-green">Senan Memmedov,</span>
             Front-end Developer.
           </p>
           <p className="text-gega-light font-Inter">
@@ -29,7 +29,6 @@ function Introduce() {
           <div className="relative inline-block">
             <Link
               to="#projects"
-              spy={true}
               smooth={true}
               offset={50}
               duration={550}
