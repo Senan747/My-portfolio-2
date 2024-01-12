@@ -1,14 +1,16 @@
 import React from "react";
 import { FaSheetPlastic } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 function Blogs() {
+  const { t } = useTranslation();
   const imageStyle = { width: "100%", height: "100%", objectFit: "cover" };
   return (
     <div className="mt-10 mb-96 mx-10" id="blogs">
       <div className="flex flex-row flex-start items-center ">
         <div className="flex flex-row items-center justify-start border-1 border-gega-light p-1 rounded-xl space-x-1">
           <FaSheetPlastic className="text-white mx-2" />
-          <p className="pr-2">My blogs</p>
+          <p className="pr-2">{t("blogs")}</p>
         </div>
       </div>
 

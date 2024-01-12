@@ -11,8 +11,10 @@ import { SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
 import { SiMui } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 function Skills() {
+  const { t } = useTranslation();
   const listStyle =
     "w-[150px] border-1 border-gega-light p-6 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300 max-md:w-[120px] max-md:p-3";
 
@@ -24,7 +26,7 @@ function Skills() {
       <div className="flex flex-row flex-start items-center ">
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <FaShapes className="text-white mx-2" />
-          <p className="pr-2">My skills</p>
+          <p className="pr-2">{t("skills")}</p>
         </div>
       </div>
       <div>
