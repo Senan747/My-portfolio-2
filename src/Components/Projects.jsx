@@ -4,9 +4,11 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineLink } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
+import { useTranslation } from "react-i18next";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Projects() {
+  const { t } = useTranslation();
   const style = {
     animation: "new 3s infinite",
   };
@@ -16,7 +18,7 @@ function Projects() {
       <div className="flex flex-row flex-start items-center mb-10">
         <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
           <FaGripVertical className="text-white mx-2" />
-          <p className="pr-2">My projects</p>
+          <p className="pr-2">{t("projects")}</p>
         </div>
       </div>
       <Carousel autoPlay showThumbs={false}>

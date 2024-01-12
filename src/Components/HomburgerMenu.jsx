@@ -7,8 +7,18 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 import { FaShapes } from "react-icons/fa";
 import { Drawer } from "@mui/material";
 import { FaSheetPlastic } from "react-icons/fa6";
+import { IoLanguage } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 function HombugerMenu({ open, onClose }) {
+  const { t, i18n } = useTranslation();
+  const handleLangClick = () => {
+    if (i18n.language === "en") {
+      i18n.changeLanguage("az");
+    } else {
+      i18n.changeLanguage("en");
+    }
+  };
   return (
     <Drawer open={open} onClose={onClose} anchor="right">
       <div className="w-full h-full bg-gega-black px-28 max-md:px-14">
@@ -25,7 +35,7 @@ function HombugerMenu({ open, onClose }) {
             >
               <AiOutlineHome className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
-                Home
+                {t("introduce")}
               </p>
             </Link>
           </li>
@@ -40,7 +50,7 @@ function HombugerMenu({ open, onClose }) {
             >
               <CgProfile className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
-                About
+                {t("about")}
               </p>
             </Link>
           </li>
@@ -55,7 +65,7 @@ function HombugerMenu({ open, onClose }) {
             >
               <BsFillBriefcaseFill className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
-                Education
+                {t("education")}
               </p>
             </Link>
           </li>
@@ -70,7 +80,7 @@ function HombugerMenu({ open, onClose }) {
             >
               <FaShapes className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
-                Skills
+                {t("skills")}
               </p>
             </Link>
           </li>
@@ -85,7 +95,7 @@ function HombugerMenu({ open, onClose }) {
             >
               <FaGripVertical className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
-                Projects
+                {t("projects")}
               </p>
             </Link>
           </li>
@@ -100,9 +110,21 @@ function HombugerMenu({ open, onClose }) {
             >
               <FaSheetPlastic className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
-                Blogs
+                {t("blogs")}
               </p>
             </Link>
+          </li>
+          <li className="pb-8 flex flex-row group">
+            <IoLanguage
+              className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4"
+              onClick={handleLangClick}
+            />{" "}
+            <p
+              className="text-gega-light group-hover:text-gega-white cursor-pointer"
+              onClick={handleLangClick}
+            >
+              {i18n.language == "en" ? "EN" : "AZ"}
+            </p>
           </li>
         </ul>
       </div>

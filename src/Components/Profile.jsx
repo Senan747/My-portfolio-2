@@ -6,15 +6,17 @@ import { IoMdCall } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiDownload } from "react-icons/bi";
 import { FaMedium } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 function Profile() {
+  const { t } = useTranslation();
   const linkStyle =
     "rounded-full border-2 border-spacing-2 border-gega-light text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2";
   return (
     <div className="h-screen flex justify-center items-center font-Roboto max-xl:mt-10">
       <div className="max-w-sm max-xl:max-w-lg h-auto border-1 border-gray-500 rounded-3xl text-gega-white p-8 fixed max-xl:relative">
         <div className="flex flex-row justify-between items-center mb-5">
-          <p className="text-4xl font-bold">Senan</p>
+          <p className="text-4xl font-bold">{t("name")}</p>
           <div>
             <p className="text-right">Front-end</p>
             <p className="text-xl">Developer</p>
@@ -62,8 +64,8 @@ function Profile() {
           className="group flex justify-center m-4"
         >
           <button className="flex flex-row justify-center text-black items-center border-2 border-gega-green bg-gega-green hover:bg-transparent p-2 w-full rounded-2xl  transition duration-300 ">
-            <p className="text-black pr-3 group-hover:text-gega-green  transition duration-300">
-              HIRE ME!
+            <p className="text-black pr-3 uppercase group-hover:text-gega-green  transition duration-300">
+              {t("hire")}!
             </p>{" "}
             <AiOutlineMail className="group-hover:text-gega-green  transition duration-300 " />
           </button>
@@ -74,8 +76,8 @@ function Profile() {
           download
         >
           <button className="flex flex-row justify-center text-black items-center border-2 bg-transparent border-gega-green bg-gega-green hover:border-gega-green hover:bg-gega-green p-2 w-full rounded-2xl  transition duration-300 ">
-            <p className="text-gega-green pr-3 group-hover:text-black  transition duration-300">
-              DOWNLOAD CV!
+            <p className="text-gega-green pr-3 uppercase group-hover:text-black  transition duration-300">
+              {t("cv")}!
             </p>{" "}
             <BiDownload className="text-gega-green transition duration-300 group-hover:text-black " />
           </button>

@@ -43,7 +43,7 @@ function App() {
               <Profile />
             </div>
 
-            <div className="basis-1/2 max-xl:basis-5/6">
+            <div className="basis-1/2 max-xl:basis-5/6 mt-5">
               <Main />
             </div>
             <div className="basis-1/6 max-xl:hidden">
