@@ -9,6 +9,7 @@ import { Drawer } from "@mui/material";
 import { FaSheetPlastic } from "react-icons/fa6";
 import { IoLanguage } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import AnimatedCursor from "react-animated-cursor";
 
 function HombugerMenu({ open, onClose }) {
   const { t, i18n } = useTranslation();
@@ -21,6 +22,22 @@ function HombugerMenu({ open, onClose }) {
   };
   return (
     <Drawer open={open} onClose={onClose} anchor="right">
+      <AnimatedCursor
+        color="255,255,255"
+        innerSize={8}
+        outerSize={40}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={1}
+        hasBlendMode={true}
+        outerStyle={{
+          mixBlendMode: "exclusion",
+        }}
+        innerStyle={{
+          backgroundColor: "#fff",
+          mixBlendMode: "exclusion",
+        }}
+      />
       <div className="w-full h-full bg-gega-black px-28 max-md:px-14">
         <p className="pb-20 pt-20">Menu</p>
         <ul>
@@ -33,7 +50,7 @@ function HombugerMenu({ open, onClose }) {
               duration={500}
               className="flex flex-row group"
             >
-              <AiOutlineHome className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
+              <AiOutlineHome className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
                 {t("introduce")}
               </p>
@@ -48,7 +65,7 @@ function HombugerMenu({ open, onClose }) {
               duration={500}
               className="flex flex-row group"
             >
-              <CgProfile className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
+              <CgProfile className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
                 {t("about")}
               </p>
@@ -63,7 +80,7 @@ function HombugerMenu({ open, onClose }) {
               duration={500}
               className="flex flex-row group"
             >
-              <BsFillBriefcaseFill className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
+              <BsFillBriefcaseFill className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
                 {t("education")}
               </p>
@@ -78,7 +95,7 @@ function HombugerMenu({ open, onClose }) {
               duration={500}
               className="flex flex-row group"
             >
-              <FaShapes className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
+              <FaShapes className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
                 {t("skills")}
               </p>
@@ -93,7 +110,7 @@ function HombugerMenu({ open, onClose }) {
               duration={500}
               className="flex flex-row group"
             >
-              <FaGripVertical className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
+              <FaGripVertical className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
                 {t("projects")}
               </p>
@@ -108,7 +125,7 @@ function HombugerMenu({ open, onClose }) {
               duration={500}
               className="flex flex-row group"
             >
-              <FaSheetPlastic className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4" />{" "}
+              <FaSheetPlastic className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 mr-4" />{" "}
               <p className="text-gega-light group-hover:text-gega-white">
                 {t("blogs")}
               </p>
@@ -116,11 +133,11 @@ function HombugerMenu({ open, onClose }) {
           </li>
           <li className="pb-8 flex flex-row group">
             <IoLanguage
-              className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 cursor-pointer mr-4"
+              className="text-2xl text-gega-light  group-hover:text-gega-green  transition duration-300 mr-4"
               onClick={handleLangClick}
             />{" "}
             <p
-              className="text-gega-light group-hover:text-gega-white cursor-pointer"
+              className="text-gega-light group-hover:text-gega-white"
               onClick={handleLangClick}
             >
               {i18n.language == "en" ? "EN" : "AZ"}

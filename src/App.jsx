@@ -5,6 +5,7 @@ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import HomeburgerMenu from "../src/Components/HomburgerMenu";
 import { useEffect, useState } from "react";
+import AnimatedCursor from "react-animated-cursor";
 
 import "./App.css";
 function App() {
@@ -30,6 +31,22 @@ function App() {
         </div>
       ) : (
         <>
+          <AnimatedCursor
+            color="255,255,255"
+            innerSize={8}
+            outerSize={40}
+            innerScale={1}
+            outerScale={2}
+            outerAlpha={1}
+            hasBlendMode={true}
+            outerStyle={{
+              mixBlendMode: "exclusion",
+            }}
+            innerStyle={{
+              backgroundColor: "#fff",
+              mixBlendMode: "exclusion",
+            }}
+          />
           <div className="hidden max-xl:flex absolute z-20">
             <HiOutlineMenuAlt4
               className="text-6xl border-2 fixed bg-gega-black rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
