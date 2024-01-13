@@ -45,7 +45,8 @@ export default {
         "web-search-project": "url('../src/assets/websearch.jpg')",
         "compiler-project": "url('../src/assets/compiler-project.jpg')",
         "trendsway-project": "url('../src/assets/trendsway-project.jpeg')",
-        "artist-project": "url('../src/assets/artist-website.png')"
+        "artist-project": "url('../src/assets/artist-website.png')",
+        "dashboard-project": "url('../src/assets/dashboard.jpeg')"
       },
       borderRadius: {
         75: "75%",

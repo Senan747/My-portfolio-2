@@ -42,6 +42,14 @@ function Projects() {
           </div>
         </div>
 
+        <div className="bg-dashboard-project bg-cover w-full h-[450px] max-md:h-[300px] rounded-xl relative mb-10">
+          <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
+            Next.js
+          </span>
+          <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
+            MUI
+          </span>
+        </div>
         <div className="bg-web-search-project bg-cover w-full h-[450px] max-md:h-[300px] rounded-xl relative mb-10 max-md:w-full">
           <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
             React
