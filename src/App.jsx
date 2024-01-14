@@ -6,10 +6,13 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import HomeburgerMenu from "../src/Components/HomburgerMenu";
 import { useEffect, useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
 import "./App.css";
 function App() {
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState("dark");
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -17,6 +20,15 @@ function App() {
     setShowMenu(!showMenu);
   };
 
+  const toggleMode = () => {
+    if (theme === "dark") {
+      setTheme("light");
+      document.documentElement.classList.remove("dark");
+    } else {
+      setTheme("dark");
+      document.documentElement.classList.add("dark");
+    }
+  };
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -24,9 +36,9 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-gega-black min-h-screen font-Inter">
+    <div className="dark:bg-gega-black bg-gega-white dark:text-gega-white text-gega-black min-h-screen font-Inter">
       {loading ? (
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex items-center justify-center min-h-screen bg-inherit">
           <ClimbingBoxLoader loading={loading} color={"#28E98C"} size={30} />
         </div>
       ) : (
@@ -47,15 +59,27 @@ function App() {
               mixBlendMode: "exclusion",
             }}
           />
-          <div className="hidden max-xl:flex absolute z-20">
+          <div className="hidden max-xl:flex absolute z-20 bg-inherit text-inherit">
             <HiOutlineMenuAlt4
               className="text-6xl border-2 fixed bg-gega-black rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
               onClick={handleMenuToggle}
             />
-            <HomeburgerMenu open={showMenu} onClose={handleMenuToggle} />
+          </div>
+          <div className="absolute z-20 -top-2 left-8 dark:bg-gega-black bg-gega-white">
+            {theme == "dark" ? (
+              <CiLight
+                onClick={toggleMode}
+                className="text-6xl text-inherit max-xl:hidden border-2 fixed bg-inherit rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
+              />
+            ) : (
+              <MdDarkMode
+                onClick={toggleMode}
+                className="text-6xl text-inherit max-xl:hidden border-2 fixed bg-inherit rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
+              />
+            )}
           </div>
 
-          <div className="bg-gega-black w-full h-full flex flex-row max-xl:flex-col max-xl:items-center max-xl:px-20 max-md:px-5 items-start animate-[pulse_1s_ease-in-out]">
+          <div className="bg-inherit text-inherit w-full h-full flex flex-row max-xl:flex-col max-xl:items-center max-xl:px-20 max-md:px-5 items-start animate-[pulse_1s_ease-in-out]">
             <div className="container basis-1/3 max-xl:basis-1/2 flex h-screen items-center justify-center">
               <Profile />
             </div>
@@ -69,6 +93,7 @@ function App() {
           </div>
         </>
       )}
+      <HomeburgerMenu open={showMenu} onClose={handleMenuToggle} />
     </div>
   );
 }

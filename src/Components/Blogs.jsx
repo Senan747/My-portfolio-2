@@ -10,8 +10,8 @@ function Blogs() {
   return (
     <div className="mt-10 mb-96 mx-10" id="blogs">
       <Header>
-        <FaSheetPlastic className="text-white mx-2" />
-        <p className="pr-2">{t("blogs")}</p>
+        <FaSheetPlastic className="text-inherit mx-2" />
+        <p className="pr-2 text-inherit">{t("blogs")}</p>
       </Header>
       <div className="flex flex-row max-md:flex-wrap max-md:flex-col gap-10 w-full mt-10 items-center justify-between">
         <motion.div
@@ -49,7 +49,7 @@ function Blogs() {
           }}
         >
           <a href="https://medium.com/@1senanmemmedov">
-            <p className="text-xl font-Inter hover:text-gega-green transition duration-300">
+            <p className="text-xl font-Inter text-inherit hover:text-gega-green transition duration-300">
               Is writing...
             </p>
           </a>

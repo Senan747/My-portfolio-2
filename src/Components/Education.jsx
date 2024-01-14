@@ -4,16 +4,16 @@ import { useTranslation } from "react-i18next";
 import Header from "./Header";
 
 function Education() {
-  const padding = "pl-20 max-md:pl-10";
+  const padding = "pl-20 max-md:pl-10 text-inherit";
   const { t } = useTranslation();
   return (
     <div className="mt-28" id="education">
       <Header>
-        <BsFillBriefcaseFill className="text-white mr-2 ml-2" />
-        <p className="pr-2">{t("resume")}</p>
+        <BsFillBriefcaseFill className="text-inherit mr-2 ml-2" />
+        <p className="pr-2 text-inherit">{t("resume")}</p>
       </Header>
       <div className="flex flex-row gap-4 mt-9 mb-10">
-        <h1 className="text-5xl text-gega-white font-sans max-lg:text-3xl">
+        <h1 className="text-5xl font-sans max-lg:text-3xl">
           {t("education")} &
         </h1>
         <h1 className="text-5xl text-gega-green font-sans max-lg:text-3xl">
@@ -63,9 +63,9 @@ function renderEducationItem(padding, date, title, organization, role) {
         <p className="pb-5 text-lg group-hover:text-gega-green text-gega-light">
           {date}
         </p>
-        <p className="pb-5 text-base max-md:text-sm">{title}</p>
-        <p className="pb-5 text-lg max-md:text-base">{organization}</p>
-        <p className="pb-5 text-xl max-md:text-lg">{role}</p>
+        <p className="pb-5 text-base max-md:text-sm text-inherit">{title}</p>
+        <p className="pb-5 text-lg max-md:text-base text-inherit">{organization}</p>
+        <p className="pb-5 text-xl max-md:text-lg text-inherit">{role}</p>
       </div>
     </div>
   );

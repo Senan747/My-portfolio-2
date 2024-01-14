@@ -8,22 +8,21 @@ import Header from "./Header";
 function Introduce() {
   const { t } = useTranslation();
   return (
-    <div className="pt-5 h-screen pl-3" id="introduce">
+    <div className="pt-5 h-screen pl-3 text-inherit" id="introduce">
       <Header>
-        <AiOutlineHome className="text-white mx-2" />
-        <p className="pr-2">{t("introduce")}</p>
+        <AiOutlineHome className=" mx-2" />
+        <p className="pr-2 text-inherit">{t("introduce")}</p>
       </Header>
       <div className="flex flex-col justify-between">
         <div className="w-full flex flex-col mb-10 max-md:mb-0 text-gega-light">
-          <p className="text-7xl pb-8 max-md:text-5xl">
+          <p className="text-7xl pb-8 max-md:text-5xl text-inherit">
             {t("me")}{" "}
             <span className="text-gega-green">{t("full-name")}, </span>
             Front-end Developer.
           </p>
           <p className="text-gega-light font-Inter">{t("info1")}</p>
         </div>
-
-        <div className="flex justify-end pb-20 mt-20">
+        <div className="dark:flex hidden justify-end pb-20 mt-20">
           <div className="relative inline-block">
             <Link
               to="#projects"

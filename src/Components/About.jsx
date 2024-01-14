@@ -7,16 +7,16 @@ function About() {
   const { t } = useTranslation();
   return (
     <div
-      className="pl-3 animate-[fadeIn_4s_ease-in-out] font-Roboto"
+      className="pl-3 animate-[fadeIn_4s_ease-in-out] font-Roboto text-inherit"
       id="about"
     >
       <Header>
-        <CgProfile className="text-white mr-2 ml-2" />
-        <p className="pr-2">{t("about")}</p>
+        <CgProfile className=" mr-2 ml-2" />
+        <p className="pr-2 text-inherit">{t("about")}</p>
       </Header>
       <div className="flex flex-col flex-start items-center ">
         <div>
-          <p className="text-5xl pb-8 max-md:text-4xl">
+          <p className="text-5xl pb-8 max-md:text-4xl text-inherit">
             {t("start")} <span className="text-gega-green">{t("start2")}</span>
           </p>
 

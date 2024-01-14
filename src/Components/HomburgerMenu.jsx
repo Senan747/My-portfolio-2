@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGripVertical } from "react-icons/fa";
 import { HashLink as Link } from "react-router-hash-link";
 import { AiOutlineHome } from "react-icons/ai";
@@ -10,14 +10,27 @@ import { FaSheetPlastic } from "react-icons/fa6";
 import { IoLanguage } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import AnimatedCursor from "react-animated-cursor";
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
 function HombugerMenu({ open, onClose }) {
   const { t, i18n } = useTranslation();
+  const [theme, setTheme] = useState("dark");
   const handleLangClick = () => {
     if (i18n.language === "en") {
       i18n.changeLanguage("az");
     } else {
       i18n.changeLanguage("en");
+    }
+  };
+
+  const toggleMode = () => {
+    if (theme === "dark") {
+      setTheme("light");
+      document.documentElement.classList.remove("dark");
+    } else {
+      setTheme("dark");
+      document.documentElement.classList.add("dark");
     }
   };
   return (
@@ -142,6 +155,19 @@ function HombugerMenu({ open, onClose }) {
             >
               {i18n.language == "en" ? "EN" : "AZ"}
             </p>
+          </li>
+          <li className="hidden max-xl:flex text-gega-white">
+            {theme == "dark" ? (
+              <CiLight
+                onClick={toggleMode}
+                className="text-6xl text-inherit border-2 fixed rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
+              />
+            ) : (
+              <MdDarkMode
+                onClick={toggleMode}
+                className="text-6xl text-inherit border-2 fixed rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
+              />
+            )}
           </li>
         </ul>
       </div>

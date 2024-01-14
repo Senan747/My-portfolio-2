@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     container: {
       center: true,
@@ -18,7 +19,7 @@ export default {
           "50%": { opacity: 0.5 },
           "100%": { opacity: 1 },
         },
-   
+
         new: {
           from: { top: "384px" },
           to: { top: "0px" },
@@ -46,7 +47,7 @@ export default {
         "compiler-project": "url('../src/assets/compiler-project.jpg')",
         "trendsway-project": "url('../src/assets/trendsway-project.jpeg')",
         "artist-project": "url('../src/assets/artist-website.png')",
-        "dashboard-project": "url('../src/assets/dashboard.jpeg')"
+        "dashboard-project": "url('../src/assets/dashboard.jpeg')",
       },
       borderRadius: {
         75: "75%",

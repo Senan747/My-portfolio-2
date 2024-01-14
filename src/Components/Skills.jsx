@@ -18,66 +18,66 @@ import Header from "./Header";
 function Skills() {
   const { t } = useTranslation();
   const listStyle =
-    "w-[150px] border-1 border-gega-light p-6 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300 max-md:w-[120px] max-md:p-3";
+    "w-[150px] text-inherit border-1 border-gega-light p-6 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300 max-md:w-[120px] max-md:p-3";
 
   const iconStyle =
-    "text-7xl text-gega-white group-hover:text-gega-green transition duration-300 max-md:text-5xl";
+    "text-7xl text-inherit group-hover:text-gega-green transition duration-300 max-md:text-5xl";
 
   return (
     <div className="mt-60" id="skills">
       <Header>
-        <FaShapes className="text-white mx-2" />
-        <p className="pr-2">{t("skills")}</p>
+        <FaShapes className="text-inherit mx-2" />
+        <p className="pr-2 text-inherit">{t("skills")}</p>
       </Header>
       <div>
         <ul className="flex flex-wrap my-20 items-center justify-center gap-5 max-md:my-10">
           <li className={`${listStyle}`}>
             <AiFillHtml5 className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">HTML</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">HTML</p>
           </li>
           <li className={`${listStyle}`}>
             <FaCss3Alt className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">CSS</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">CSS</p>
           </li>
           <li className={`${listStyle}`}>
             <SiJavascript className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">JS</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">JS</p>
           </li>{" "}
           <li className={`${listStyle}`}>
             <FaReact className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">React</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">React</p>
           </li>
           <li className={`${listStyle}`}>
             <TbBrandNextjs className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">Next.js</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">Next.js</p>
           </li>
           <li className={`w-[200px] ${listStyle}`}>
             <SiRedux className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">RTK & RTKQ</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">RTK & RTKQ</p>
           </li>
           <li className={`${listStyle}`}>
             <FaVuejs className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">VueJS</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">VueJS</p>
           </li>
           <li className={`${listStyle}`}>
             <SiTypescript className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">TypeScript</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">TypeScript</p>
           </li>
           <li className={`${listStyle}`}>
             <SiTailwindcss className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">TailwindCSS</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">TailwindCSS</p>
           </li>
           <li className={`${listStyle}`}>
             <FaSass className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">Sass</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">Sass</p>
           </li>
           <li className={`${listStyle}`}>
             <SiMui className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">Material UI</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">Material UI</p>
           </li>
           <li className={`${listStyle}`}>
             <FiFigma className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm">Figma</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">Figma</p>
           </li>
         </ul>
       </div>

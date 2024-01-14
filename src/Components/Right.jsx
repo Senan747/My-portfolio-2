@@ -27,13 +27,11 @@ function Right() {
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-between">
-      <div className="">
-        <HiOutlineMenuAlt4
-          className="text-6xl border-2 rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 p-4 cursor-pointer mt-5"
-          onClick={handleMenuToggle}
-        />
-      </div>
-      <ul className="flex flex-col justify-center items-center bg-gega-black fixed top-[30%] border-1 border-gega-light rounded-3xl p-1">
+      <HiOutlineMenuAlt4
+        className="text-6xl border-2 rounded-full border-gega-light text-inherit hover:border-gega-green hover:text-gega-green  transition duration-300 p-4 cursor-pointer mt-5"
+        onClick={handleMenuToggle}
+      />
+      <ul className="flex flex-col justify-center items-center bg-gega-white dark:bg-gega-dark fixed top-[30%] border-1 border-gega-light rounded-3xl p-1">
         <Link to="#introduce" smooth={true} offset={50} duration={550}>
           <li className="text-2xl text-gega-light  hover:border-gega-green hover:text-gega-green  transition duration-300 p-2 mb-3 cursor-pointer">
             <AiOutlineHome />{" "}
@@ -65,8 +63,11 @@ function Right() {
           </li>
         </Link>
       </ul>
-      <div className="mb-5">
-        <p className="text-xl border-2 rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 p-4 cursor-pointer" onClick={handleLangClick}>
+      <div className="mb-5 text-inherit bg-inherit">
+        <p
+          className="text-xl border-2 rounded-full border-gega-light text-inherit bg-inherit  hover:border-gega-green hover:text-gega-green  transition duration-300 p-4 cursor-pointer"
+          onClick={handleLangClick}
+        >
           {i18n.language == "en" ? "EN" : "AZ"}
         </p>
       </div>

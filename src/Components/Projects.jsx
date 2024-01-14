@@ -17,8 +17,8 @@ function Projects() {
   return (
     <div className="mt-24 h-auto mx-10 max-md:mx-2" id="projects">
       <Header>
-        <FaGripVertical className="text-white mx-2" />
-        <p className="pr-2">{t("projects")}</p>
+        <FaGripVertical className="text-inherit mx-2" />
+        <p className="pr-2 text-inherit">{t("projects")}</p>
       </Header>
       <Carousel autoPlay showThumbs={false}>
         <div className="bg-trendsway-project bg-cover w-full h-[450px] max-md:h-[300px] rounded-xl relative mb-10">
@@ -122,10 +122,10 @@ function Projects() {
             href="https://github.com/Senan747?tab=repositories"
             className="flex flex-row justify-center items-center rounded-[100%] border-2 py-12 px-3 hover:border-gega-green group transition duration-300"
           >
-            <p className="group-hover:text-gega-green transition duration-300">
+            <p className="group-hover:text-gega-green text-inherit transition duration-300">
               For more
             </p>
-            <FaArrowRight className="text-white ml-4 group-hover:text-gega-green transition duration-300" />
+            <FaArrowRight className="text-inherit ml-4 group-hover:text-gega-green transition duration-300" />
           </a>
         </div>
       </Carousel>
