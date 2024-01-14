@@ -5,6 +5,7 @@ import { AiOutlineLink } from "react-icons/ai";
 import { FaArrowRight } from "react-icons/fa";
 import { Carousel } from "react-responsive-carousel";
 import { useTranslation } from "react-i18next";
+import Header from "./Header";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function Projects() {
@@ -15,12 +16,10 @@ function Projects() {
 
   return (
     <div className="mt-24 h-auto mx-10 max-md:mx-2" id="projects">
-      <div className="flex flex-row flex-start items-center mb-10">
-        <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
-          <FaGripVertical className="text-white mx-2" />
-          <p className="pr-2">{t("projects")}</p>
-        </div>
-      </div>
+      <Header>
+        <FaGripVertical className="text-white mx-2" />
+        <p className="pr-2">{t("projects")}</p>
+      </Header>
       <Carousel autoPlay showThumbs={false}>
         <div className="bg-trendsway-project bg-cover w-full h-[450px] max-md:h-[300px] rounded-xl relative mb-10">
           <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">

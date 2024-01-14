@@ -11,7 +11,9 @@ import { SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
 import { SiMui } from "react-icons/si";
+import { FaSass } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import Header from "./Header";
 
 function Skills() {
   const { t } = useTranslation();
@@ -23,12 +25,10 @@ function Skills() {
 
   return (
     <div className="mt-60" id="skills">
-      <div className="flex flex-row flex-start items-center ">
-        <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
-          <FaShapes className="text-white mx-2" />
-          <p className="pr-2">{t("skills")}</p>
-        </div>
-      </div>
+      <Header>
+        <FaShapes className="text-white mx-2" />
+        <p className="pr-2">{t("skills")}</p>
+      </Header>
       <div>
         <ul className="flex flex-wrap my-20 items-center justify-center gap-5 max-md:my-10">
           <li className={`${listStyle}`}>
@@ -66,6 +66,10 @@ function Skills() {
           <li className={`${listStyle}`}>
             <SiTailwindcss className={`${iconStyle}`} />
             <p className="mt-2 text-lg max-md:text-sm">TailwindCSS</p>
+          </li>
+          <li className={`${listStyle}`}>
+            <FaSass className={`${iconStyle}`} />
+            <p className="mt-2 text-lg max-md:text-sm">Sass</p>
           </li>
           <li className={`${listStyle}`}>
             <SiMui className={`${iconStyle}`} />

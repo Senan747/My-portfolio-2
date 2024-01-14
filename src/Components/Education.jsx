@@ -1,18 +1,17 @@
 import React from "react";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
+import Header from "./Header";
 
 function Education() {
   const padding = "pl-20 max-md:pl-10";
   const { t } = useTranslation();
   return (
     <div className="mt-28" id="education">
-      <div className="flex flex-row flex-start items-center">
-        <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
-          <BsFillBriefcaseFill className="text-white mr-2 ml-2" />
-          <p className="pr-2">{t("resume")}</p>
-        </div>
-      </div>
+      <Header>
+        <BsFillBriefcaseFill className="text-white mr-2 ml-2" />
+        <p className="pr-2">{t("resume")}</p>
+      </Header>
       <div className="flex flex-row gap-4 mt-9 mb-10">
         <h1 className="text-5xl text-gega-white font-sans max-lg:text-3xl">
           {t("education")} &

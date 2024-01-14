@@ -1,6 +1,7 @@
 import React from "react";
 import { CgProfile } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
+import Header from "./Header";
 
 function About() {
   const { t } = useTranslation();
@@ -9,13 +10,10 @@ function About() {
       className="pl-3 animate-[fadeIn_4s_ease-in-out] font-Roboto"
       id="about"
     >
-      <div className="flex flex-row flex-start items-center mb-10 mt-10 ">
-        <div className="flex flex-row items-center border-1 border-gega-light p-1 rounded-xl space-x-1">
-          <CgProfile className="text-white mr-2 ml-2" />
-          <p className="pr-2">{t("about")}</p>
-        </div>
-      </div>
-
+      <Header>
+        <CgProfile className="text-white mr-2 ml-2" />
+        <p className="pr-2">{t("about")}</p>
+      </Header>
       <div className="flex flex-col flex-start items-center ">
         <div>
           <p className="text-5xl pb-8 max-md:text-4xl">
