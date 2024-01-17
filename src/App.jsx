@@ -65,14 +65,14 @@ function App() {
               onClick={handleMenuToggle}
             />
           </div>
-          <div className="absolute z-20 -top-2 left-8 dark:bg-gega-black bg-gega-white">
+          <div className="absolute z-20 -top-6 left-8 dark:bg-gega-black bg-gega-white">
             {theme == "dark" ? (
-              <CiLight
+              <MdDarkMode
                 onClick={toggleMode}
                 className="text-6xl text-inherit max-xl:hidden border-2 fixed bg-inherit rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
               />
             ) : (
-              <MdDarkMode
+              <CiLight
                 onClick={toggleMode}
                 className="text-6xl text-inherit max-xl:hidden border-2 fixed bg-inherit rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
               />

@@ -48,6 +48,7 @@ export default {
         "trendsway-project": "url('../src/assets/trendsway-project.jpeg')",
         "artist-project": "url('../src/assets/artist-website.png')",
         "dashboard-project": "url('../src/assets/dashboard.jpeg')",
+        "ascca-project": "url('../src/assets/ascca-project.png')"
       },
       borderRadius: {
         75: "75%",

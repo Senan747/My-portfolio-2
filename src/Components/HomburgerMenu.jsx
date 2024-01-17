@@ -158,12 +158,12 @@ function HombugerMenu({ open, onClose }) {
           </li>
           <li className="hidden max-xl:flex text-gega-white">
             {theme == "dark" ? (
-              <CiLight
+              <MdDarkMode
                 onClick={toggleMode}
                 className="text-6xl text-inherit border-2 fixed rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
               />
             ) : (
-              <MdDarkMode
+              <CiLight
                 onClick={toggleMode}
                 className="text-6xl text-inherit border-2 fixed rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
               />

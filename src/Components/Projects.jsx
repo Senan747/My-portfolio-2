@@ -28,6 +28,9 @@ function Projects() {
           <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
             TailwindCSS
           </span>
+          <span className="absolute bottom-1 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
+            Redux TK
+          </span>
           <div
             className="w-full h-[450px] max-md:h-[300px] absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
             style={style}
@@ -94,6 +97,26 @@ function Projects() {
               target="_blank"
             >
               <AiOutlineLink className="text-5xl ml-5 " />
+            </a>
+          </div>
+        </div>
+
+        <div className="bg-ascca-project  bg-cover relative w-full h-[450px] max-md:h-[300px] max-md:w-full rounded-xl">
+          <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1  font-bold rounded-lg text-xs">
+            React
+          </span>
+          <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
+            MUI
+          </span>
+          <div
+            className="w-full h-[450px] max-md:h-[300px] absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
+            style={style}
+          >
+            <a href="https://github.com/Senan747/ascca-empro" target="_blank">
+              <AiFillGithub className="text-4xl ml-5" />
+            </a>
+            <a href="https://ascca-empro.vercel.app/" target="_blank">
+              <AiOutlineLink className="text-4xl ml-5 " />
             </a>
           </div>
         </div>
