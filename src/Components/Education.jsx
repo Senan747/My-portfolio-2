@@ -29,23 +29,30 @@ function Education() {
       )}
       {renderEducationItem(
         padding,
-        "20.03.2022 - 01.10.2022",
+        "03.2022 - 10.2022",
         "Volunteer",
         '"Dil-inkişaf" club',
         "Social media manager"
       )}
       {renderEducationItem(
         padding,
-        "18.04.2023 - ~",
+        "04.2023 - ~",
         "Volunteer",
         "Enactus club",
         "Front-end developer"
       )}
       {renderEducationItem(
         padding,
-        "06.10.2023 - 06.12.2023",
+        "10.2023 - 12.2023",
         "Intern",
         "Techtonas",
+        "Front-end developer"
+      )}
+      {renderEducationItem(
+        padding,
+        "06.02.2024 - ~",
+        "Intern",
+        "Vabiss",
         "Front-end developer"
       )}
     </div>
@@ -64,7 +71,9 @@ function renderEducationItem(padding, date, title, organization, role) {
           {date}
         </p>
         <p className="pb-5 text-base max-md:text-sm text-inherit">{title}</p>
-        <p className="pb-5 text-lg max-md:text-base text-inherit">{organization}</p>
+        <p className="pb-5 text-lg max-md:text-base text-inherit">
+          {organization}
+        </p>
         <p className="pb-5 text-xl max-md:text-lg text-inherit">{role}</p>
       </div>
     </div>

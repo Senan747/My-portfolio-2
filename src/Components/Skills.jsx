@@ -12,6 +12,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Header from "./Header";
 
@@ -42,7 +43,13 @@ function Skills() {
           <li className={`${listStyle}`}>
             <SiJavascript className={`${iconStyle}`} />
             <p className="mt-2 text-lg max-md:text-sm text-inherit">JS</p>
-          </li>{" "}
+          </li>
+          <li className={`${listStyle}`}>
+            <SiTypescript className={`${iconStyle}`} />
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">
+              TypeScript
+            </p>
+          </li>
           <li className={`${listStyle}`}>
             <FaReact className={`${iconStyle}`} />
             <p className="mt-2 text-lg max-md:text-sm text-inherit">React</p>
@@ -53,19 +60,19 @@ function Skills() {
           </li>
           <li className={`w-[200px] ${listStyle}`}>
             <SiRedux className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">RTK & RTKQ</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">
+              RTK & RTKQ
+            </p>
           </li>
           <li className={`${listStyle}`}>
             <FaVuejs className={`${iconStyle}`} />
             <p className="mt-2 text-lg max-md:text-sm text-inherit">VueJS</p>
           </li>
           <li className={`${listStyle}`}>
-            <SiTypescript className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">TypeScript</p>
-          </li>
-          <li className={`${listStyle}`}>
             <SiTailwindcss className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">TailwindCSS</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">
+              TailwindCSS
+            </p>
           </li>
           <li className={`${listStyle}`}>
             <FaSass className={`${iconStyle}`} />
@@ -73,7 +80,13 @@ function Skills() {
           </li>
           <li className={`${listStyle}`}>
             <SiMui className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">Material UI</p>
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">
+              Material UI
+            </p>
+          </li>
+          <li className={`${listStyle}`}>
+            <FaGithub className={`${iconStyle}`} />
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">Git</p>
           </li>
           <li className={`${listStyle}`}>
             <FiFigma className={`${iconStyle}`} />

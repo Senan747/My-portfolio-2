@@ -52,25 +52,6 @@ function Projects() {
             MUI
           </span>
         </div>
-        <div className="bg-web-search-project bg-cover w-full h-[450px] max-md:h-[300px] rounded-xl relative mb-10 max-md:w-full">
-          <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
-            React
-          </span>
-          <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
-            TailwindCSS
-          </span>
-          <div
-            className="w-full h-[450px] max-md:h-[300px] absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
-            style={style}
-          >
-            <a href="https://github.com/Senan747/web-search" target="_blank">
-              <AiFillGithub className="text-5xl ml-5" />
-            </a>
-            <a href="https://web-search-mu.vercel.app/" target="_blank">
-              <AiOutlineLink className="text-5xl ml-5 " />
-            </a>
-          </div>
-        </div>
 
         <div className="bg-artist-project bg-cover w-full h-[450px] max-md:h-[300px]  rounded-xl relative mb-10">
           <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
@@ -96,6 +77,25 @@ function Projects() {
               href="https://artist-portfolio-swart.vercel.app/"
               target="_blank"
             >
+              <AiOutlineLink className="text-5xl ml-5 " />
+            </a>
+          </div>
+        </div>
+        <div className="bg-web-search-project bg-cover w-full h-[450px] max-md:h-[300px] rounded-xl relative mb-10 max-md:w-full">
+          <span className="absolute bottom-10 left-8 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
+            React
+          </span>
+          <span className="absolute bottom-10 left-28 bg-gega-green text-gega-white px-4 py-1 font-bold rounded-lg text-xs">
+            TailwindCSS
+          </span>
+          <div
+            className="w-full h-[450px] max-md:h-[300px] absolute bg-gega-green flex items-center justify-center opacity-0 hover:opacity-100 transition duration-1000 rounded-xl"
+            style={style}
+          >
+            <a href="https://github.com/Senan747/web-search" target="_blank">
+              <AiFillGithub className="text-5xl ml-5" />
+            </a>
+            <a href="https://web-search-mu.vercel.app/" target="_blank">
               <AiOutlineLink className="text-5xl ml-5 " />
             </a>
           </div>

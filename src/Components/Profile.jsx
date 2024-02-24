@@ -71,7 +71,7 @@ function Profile() {
           </button>
         </a>
         <a
-          href="../Senan_Memmedov-Frontend-dev_CV.pdf"
+          href="../MEMMEDOV__SENAN__CV.pdf"
           className="group flex justify-center mx-4 my-1"
           download
         >
