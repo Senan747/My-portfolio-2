@@ -13,6 +13,7 @@ import { SiTypescript } from "react-icons/si";
 import { SiMui } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { SiDevexpress } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import Header from "./Header";
 
@@ -72,6 +73,12 @@ function Skills() {
             <SiTailwindcss className={`${iconStyle}`} />
             <p className="mt-2 text-lg max-md:text-sm text-inherit">
               TailwindCSS
+            </p>
+          </li>
+          <li className={`${listStyle}`}>
+            <SiDevexpress className={`${iconStyle}`} />
+            <p className="mt-2 text-lg max-md:text-sm text-inherit">
+              DevExtreme
             </p>
           </li>
           <li className={`${listStyle}`}>

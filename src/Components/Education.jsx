@@ -22,21 +22,14 @@ function Education() {
       </div>
       {renderEducationItem(
         padding,
-        "2021 - ~",
+        "2021 - Present",
         "Bachelor",
         "University: Academy of State Customs Committee",
         "Speciality: Information Technology"
       )}
       {renderEducationItem(
         padding,
-        "03.2022 - 10.2022",
-        "Volunteer",
-        '"Dil-inkişaf" club',
-        "Social media manager"
-      )}
-      {renderEducationItem(
-        padding,
-        "04.2023 - ~",
+        "04.2023 - Present",
         "Volunteer",
         "Enactus club",
         "Front-end developer"
@@ -50,7 +43,14 @@ function Education() {
       )}
       {renderEducationItem(
         padding,
-        "06.02.2024 - ~",
+        "06.02.2024 - 06.03.2024",
+        "Intern",
+        "Vabiss",
+        "Front-end developer"
+      )}
+       {renderEducationItem(
+        padding,
+        "06.02.2024 - Present",
         "Intern",
         "Vabiss",
         "Front-end developer"
