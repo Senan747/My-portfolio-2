@@ -4,7 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { IoMdCall } from "react-icons/io";
 import { AiOutlineMail } from "react-icons/ai";
-import { BiDownload } from "react-icons/bi";
+import { IoMdOpen } from "react-icons/io";
 import { FaMedium } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 
@@ -32,6 +32,7 @@ function Profile() {
         <div className="flex justify-center flex-row w-full">
           <a
             href="https://www.linkedin.com/in/senan-memmedov/"
+            target="_blank"
             className={`${linkStyle}`}
           >
             <AiFillLinkedin className="text-4xl p-2" />
@@ -39,14 +40,20 @@ function Profile() {
           <a
             href="https://www.instagram.com/senanthesad/?igshid=ZDdkNTZiNTM%3D"
             className={`${linkStyle}`}
+            target="_blank"
           >
             <AiFillInstagram className="text-4xl p-2" />
           </a>
-          <a href="https://github.com/Senan747" className={`${linkStyle}`}>
+          <a
+            href="https://github.com/Senan747"
+            target="_blank"
+            className={`${linkStyle}`}
+          >
             <AiFillGithub className="text-4xl p-2" />
           </a>
           <a
             href="https://medium.com/@1senanmemmedov"
+            target="_blank"
             className={`${linkStyle}`}
           >
             <FaMedium className="text-4xl p-2" />
@@ -71,15 +78,15 @@ function Profile() {
           </button>
         </a>
         <a
-          href="../MEMMEDOV__SENAN__CV.pdf"
+          href="../Sanan-Mammadov-CV.pdf"
           className="group flex justify-center mx-4 my-1"
-          download
+          target="_blank"
         >
           <button className="flex flex-row justify-center text-black items-center border-2 bg-transparent border-gega-green bg-gega-green hover:border-gega-green hover:bg-gega-green p-2 w-full rounded-2xl  transition duration-300 ">
             <p className="text-gega-green pr-3 uppercase group-hover:text-black  transition duration-300">
               {t("cv")}!
             </p>{" "}
-            <BiDownload className="text-gega-green transition duration-300 group-hover:text-black " />
+            <IoMdOpen className="text-gega-green transition duration-300 group-hover:text-black " />
           </button>
         </a>
       </div>

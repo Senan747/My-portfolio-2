@@ -30,7 +30,9 @@ function Blogs() {
         </motion.div>
         <motion.div
           whileHover={{ scale: [null, 1.5, 1.4] }}
-          transition={{ duration: 0.3 }} style={{ width: "60%", height: "200px", marginRight: "20px" }}>
+          transition={{ duration: 0.3 }}
+          style={{ width: "60%", height: "200px", marginRight: "20px" }}
+        >
           <a href="https://medium.com/@1senanmemmedov/masonry-layoutlar-909afc6c4b78">
             <img
               src="/masonary-layout-blog.webp"
@@ -40,20 +42,6 @@ function Blogs() {
             />
           </a>
         </motion.div>
-        <div
-          style={{
-            width: "60%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <a href="https://medium.com/@1senanmemmedov">
-            <p className="text-xl font-Inter text-inherit hover:text-gega-green transition duration-300">
-              Is writing...
-            </p>
-          </a>
-        </div>
       </div>
     </div>
   );

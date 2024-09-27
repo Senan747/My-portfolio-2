@@ -48,10 +48,10 @@ function Education() {
         "Vabiss",
         "Front-end developer"
       )}
-       {renderEducationItem(
+      {renderEducationItem(
         padding,
         "06.02.2024 - Present",
-        "Intern",
+        "",
         "Vabiss",
         "Front-end developer"
       )}
