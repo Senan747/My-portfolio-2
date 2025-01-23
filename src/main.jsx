@@ -5,12 +5,12 @@ import "./index.css";
 import "./i18n.js";
 import { BrowserRouter } from "react-router-dom";
 import { Suspense } from "react";
-import { ClimbingBoxLoader } from "react-spinners";
+import Loading from "./Components/Loading.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Suspense fallback={<ClimbingBoxLoader />}>
+      <Suspense fallback={<Loading />}>
         <App />
       </Suspense>
     </BrowserRouter>
