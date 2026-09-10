@@ -10,7 +10,7 @@ export const socialLinks = [
   },
   {
     Icon: AiFillInstagram,
-    href: "https://www.instagram.com/senanthesad/?igshid=ZDdkNTZiNTM%3D",
+    href: "https://www.instagram.com/0xsenan/",
     label: "Instagram",
   },
   {
