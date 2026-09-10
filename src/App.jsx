@@ -1,12 +1,9 @@
 import Profile from "../src/Components/Profile";
 import Right from "../src/Components/Right";
 import Main from "../src/Components/Main";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import HamburgerMenu from "../src/Components/HamburgerMenu";
 import { useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
-import { CiLight } from "react-icons/ci";
-import { MdDarkMode } from "react-icons/md";
 import { useTheme } from "./hooks/useTheme";
 
 import "./App.css";
@@ -38,30 +35,14 @@ function App() {
             mixBlendMode: "exclusion",
           }}
         />
-        <div className="hidden max-xl:flex absolute z-20 bg-inherit text-inherit">
-          <button
-            type="button"
-            onClick={handleMenuToggle}
-            aria-label="Open menu"
-            className="border-2 fixed bg-gega-black rounded-full border-gega-light text-gega-white  hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
-          >
-            <HiOutlineMenuAlt4 className="text-6xl" />
-          </button>
-        </div>
-        <div className="absolute z-20 -top-6 left-8 dark:bg-gega-black bg-gega-white">
-          <button
-            type="button"
-            onClick={toggleTheme}
-            aria-label="Toggle theme"
-            className="text-6xl text-inherit max-xl:hidden border-2 fixed bg-inherit rounded-full border-gega-light hover:border-gega-green hover:text-gega-green  transition duration-300 m-2 p-4 cursor-pointer mt-10"
-          >
-            {theme == "dark" ? <MdDarkMode /> : <CiLight />}
-          </button>
-        </div>
 
         <div className="bg-inherit text-inherit w-full h-full flex flex-row max-xl:flex-col max-xl:items-center max-xl:px-12 max-md:px-6 max-sm:px-3 items-start animate-[pulse_1s_ease-in-out]">
           <div className="container basis-1/3 max-xl:basis-1/2 flex h-screen items-center justify-center">
-            <Profile />
+            <Profile
+              theme={theme}
+              toggleTheme={toggleTheme}
+              onMenuToggle={handleMenuToggle}
+            />
           </div>
 
           <div className="basis-1/2 max-xl:basis-5/6 mt-5">
