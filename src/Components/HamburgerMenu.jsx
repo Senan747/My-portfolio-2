@@ -8,6 +8,7 @@ import { Drawer } from "@mui/material";
 import { FaSheetPlastic } from "react-icons/fa6";
 import { IoLanguage } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import AnimatedCursor from "react-animated-cursor";
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
 import { getNextLanguage } from "../data/languages";
@@ -22,6 +23,22 @@ function HamburgerMenu({ open, onClose }) {
 
   return (
     <Drawer open={open} onClose={onClose} anchor="right">
+      <AnimatedCursor
+        color="255,255,255"
+        innerSize={8}
+        outerSize={40}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={1}
+        hasBlendMode={true}
+        outerStyle={{
+          mixBlendMode: "exclusion",
+        }}
+        innerStyle={{
+          backgroundColor: "#fff",
+          mixBlendMode: "exclusion",
+        }}
+      />
       <div className="w-full h-full bg-gega-black px-28 max-md:px-14">
         <p className="pb-20 pt-20">{t("menu")}</p>
         <ul>
