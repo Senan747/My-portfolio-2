@@ -1,99 +1,42 @@
-import React, { useEffect } from "react";
 import Introduce from "./Introduce";
 import About from "./About";
 import Education from "./Education";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import { useInView } from "react-intersection-observer";
 import Blogs from "./Blogs";
+import { useRevealOnScroll } from "../hooks/useRevealOnScroll";
 
 function Main() {
-  const [refIntroduce, inViewIntroduce] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const [refAbout, inViewAbout] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const [refEducation, inViewEducation] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const [refSkills, inViewSkills] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const [refProjects, inViewProjects] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  const [refBlogs, inViewBlogs] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const animateElement = (elementRef, inView, animationVariants) => {
-    const element = elementRef.current;
-    if (element && inView) {
-      element.style.opacity = animationVariants.opacity;
-      element.style.transform = `translateY(${animationVariants.y}px)`;
-    }
-  };
-
-  useEffect(() => {
-    const animationVariants = { opacity: 1, y: 0 };
-    animateElement(refIntroduce, inViewIntroduce, animationVariants);
-  }, [refIntroduce, inViewIntroduce]);
-
-  useEffect(() => {
-    const animationVariants = { opacity: 1, y: 0 };
-    animateElement(refAbout, inViewAbout, animationVariants);
-  }, [refAbout, inViewAbout]);
-
-  useEffect(() => {
-    const animationVariants = { opacity: 1, y: 0 };
-    animateElement(refEducation, inViewEducation, animationVariants);
-  }, [refEducation, inViewEducation]);
-
-  useEffect(() => {
-    const animationVariants = { opacity: 1, y: 0 };
-    animateElement(refSkills, inViewSkills, animationVariants);
-  }, [refSkills, inViewSkills]);
-
-  useEffect(() => {
-    const animationVariants = { opacity: 1, y: 0 };
-    animateElement(refProjects, inViewProjects, animationVariants);
-  }, [refProjects, inViewProjects]);
-
-  useEffect(() => {
-    const animationVariants = { opacity: 1, y: 0 };
-    animateElement(refBlogs, inViewBlogs, animationVariants);
-  }, [refBlogs, inViewBlogs]);
+  const introduce = useRevealOnScroll();
+  const about = useRevealOnScroll();
+  const education = useRevealOnScroll();
+  const skills = useRevealOnScroll();
+  const projects = useRevealOnScroll();
+  const blogs = useRevealOnScroll();
 
   return (
     <>
-      <div ref={refIntroduce} className="">
+      <div ref={introduce.ref} className={introduce.className}>
         <Introduce />
       </div>
 
-      <div ref={refAbout}>
+      <div ref={about.ref} className={about.className}>
         <About />
       </div>
 
-      <div ref={refEducation}>
+      <div ref={education.ref} className={education.className}>
         <Education />
       </div>
 
-      <div ref={refSkills}>
+      <div ref={skills.ref} className={skills.className}>
         <Skills />
       </div>
 
-      <div ref={refProjects}>
+      <div ref={projects.ref} className={projects.className}>
         <Projects />
       </div>
 
-      <div ref={refBlogs}>
+      <div ref={blogs.ref} className={blogs.className}>
         <Blogs />
       </div>
     </>

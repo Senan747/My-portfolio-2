@@ -1,11 +1,11 @@
-import React from "react";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import Header from "./Header";
+import { educationTimeline } from "../data/education";
 
 function Education() {
-  const padding = "pl-20 max-md:pl-10 text-inherit";
   const { t } = useTranslation();
+
   return (
     <div className="mt-28" id="education">
       <Header>
@@ -20,54 +20,22 @@ function Education() {
           {t("experience")}
         </h1>
       </div>
-      {renderEducationItem(
-        padding,
-        "2021 - Present",
-        "Bachelor",
-        "University: Academy of State Customs Committee",
-        "Speciality: Information Technology"
-      )}
-      {renderEducationItem(
-        padding,
-        "04.2023 - Present",
-        "Volunteer",
-        "Enactus club",
-        "Front-end developer"
-      )}
-      {renderEducationItem(
-        padding,
-        "10.2023 - 12.2023",
-        "Intern",
-        "Techtonas",
-        "Front-end developer"
-      )}
-      {renderEducationItem(
-        padding,
-        "06.02.2024 - 06.03.2024",
-        "Intern",
-        "Vabiss",
-        "Front-end developer"
-      )}
-      {renderEducationItem(
-        padding,
-        "06.02.2024 - Present",
-        "",
-        "Vabiss",
-        "Front-end developer"
-      )}
+      {educationTimeline.map((item) => (
+        <EducationItem key={`${item.organization}-${item.date}`} {...item} />
+      ))}
     </div>
   );
 }
 
-function renderEducationItem(padding, date, title, organization, role) {
+function EducationItem({ date, title, organization, role }) {
   return (
-    <div className={`relative group ${padding}`}>
+    <div className="relative group pl-20 max-md:pl-10 text-inherit">
       <div>
-        <div className="absolute left-0 top-0 bg-gega-light rounded-full w-3 h-3 z-10 group-hover:bg-gega-green"></div>
-        <div className="absolute left-1.5 top-0 h-[220px] max-md:h-[200px] border-l-0.5 border-gega-light"></div>
+        <div className="absolute left-0 top-0 bg-zinc-400 dark:bg-gega-light rounded-full w-3 h-3 z-10 group-hover:bg-gega-green"></div>
+        <div className="absolute left-1.5 top-0 h-[220px] max-md:h-[200px] border-l-0.5 border-zinc-300 dark:border-gega-light"></div>
       </div>
       <div className="pl-8 max-md:pl-0 pb-5">
-        <p className="pb-5 text-lg group-hover:text-gega-green text-gega-light">
+        <p className="pb-5 text-lg group-hover:text-gega-green text-zinc-600 dark:text-gega-light">
           {date}
         </p>
         <p className="pb-5 text-base max-md:text-sm text-inherit">{title}</p>

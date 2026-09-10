@@ -1,105 +1,37 @@
-import React from "react";
 import { FaShapes } from "react-icons/fa";
-import { AiFillHtml5 } from "react-icons/ai";
-import { FaCss3Alt } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { FaVuejs } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FiFigma } from "react-icons/fi";
-import { SiTailwindcss } from "react-icons/si";
-import { SiRedux } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiTypescript } from "react-icons/si";
-import { SiMui } from "react-icons/si";
-import { FaSass } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { SiDevexpress } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import Header from "./Header";
+import { skillCategories } from "../data/skills";
 
 function Skills() {
   const { t } = useTranslation();
-  const listStyle =
-    "w-[150px] text-inherit border-1 border-gega-light p-6 rounded-30 flex items-center flex-col mb-8 group hover:border-gega-green transition duration-300 max-md:w-[120px] max-md:p-3";
-
-  const iconStyle =
-    "text-7xl text-inherit group-hover:text-gega-green transition duration-300 max-md:text-5xl";
 
   return (
-    <div className="mt-60" id="skills">
+    <div className="mt-60 max-md:mt-32" id="skills">
       <Header>
         <FaShapes className="text-inherit mx-2" />
         <p className="pr-2 text-inherit">{t("skills")}</p>
       </Header>
-      <div>
-        <ul className="flex flex-wrap my-20 items-center justify-center gap-5 max-md:my-10">
-          <li className={`${listStyle}`}>
-            <AiFillHtml5 className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">HTML</p>
-          </li>
-          <li className={`${listStyle}`}>
-            <FaCss3Alt className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">CSS</p>
-          </li>
-          <li className={`${listStyle}`}>
-            <SiJavascript className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">JS</p>
-          </li>
-          <li className={`${listStyle}`}>
-            <SiTypescript className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">
-              TypeScript
+
+      <div className="flex flex-col gap-14 my-16 max-md:my-8 max-md:gap-10">
+        {skillCategories.map(({ key, items }) => (
+          <div key={key}>
+            <p className="text-sm uppercase tracking-[0.2em] text-gega-green font-semibold mb-6">
+              {t(`skillCategories.${key}`)}
             </p>
-          </li>
-          <li className={`${listStyle}`}>
-            <FaReact className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">React</p>
-          </li>
-          <li className={`${listStyle}`}>
-            <TbBrandNextjs className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">Next.js</p>
-          </li>
-          <li className={`w-[200px] ${listStyle}`}>
-            <SiRedux className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">
-              RTK & RTKQ
-            </p>
-          </li>
-          <li className={`${listStyle}`}>
-            <FaVuejs className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">VueJS</p>
-          </li>
-          <li className={`${listStyle}`}>
-            <SiTailwindcss className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">
-              TailwindCSS
-            </p>
-          </li>
-          <li className={`${listStyle}`}>
-            <SiDevexpress className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">
-              DevExtreme
-            </p>
-          </li>
-          <li className={`${listStyle}`}>
-            <FaSass className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">Sass</p>
-          </li>
-          <li className={`${listStyle}`}>
-            <SiMui className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">
-              Material UI
-            </p>
-          </li>
-          <li className={`${listStyle}`}>
-            <FaGithub className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">Git</p>
-          </li>
-          <li className={`${listStyle}`}>
-            <FiFigma className={`${iconStyle}`} />
-            <p className="mt-2 text-lg max-md:text-sm text-inherit">Figma</p>
-          </li>
-        </ul>
+            <ul className="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] gap-4">
+              {items.map(({ Icon, name }) => (
+                <li
+                  key={name}
+                  className="group flex flex-col items-center justify-center gap-3 border-1 border-zinc-300 dark:border-gega-light rounded-2xl py-6 px-2 hover:border-gega-green hover:-translate-y-1 hover:shadow-[0_10px_30px_-15px_rgba(40,233,140,0.5)] transition duration-300"
+                >
+                  <Icon className="text-4xl text-inherit group-hover:text-gega-green transition duration-300 max-md:text-3xl" />
+                  <p className="text-sm text-inherit text-center">{name}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </div>
   );

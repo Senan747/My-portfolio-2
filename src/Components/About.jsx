@@ -1,4 +1,3 @@
-import React from "react";
 import { CgProfile } from "react-icons/cg";
 import { useTranslation } from "react-i18next";
 import Header from "./Header";
@@ -20,7 +19,7 @@ function About() {
             {t("start")} <span className="text-gega-green">{t("start2")}</span>
           </p>
 
-          <p className="whitespace-normal text-lg text-gega-light max-md:text-base text-justify text-wrap pr-3 font-Inter">
+          <p className="whitespace-normal text-lg text-zinc-600 dark:text-gega-light max-md:text-base text-justify text-wrap pr-3 font-Inter">
             {t("about2")}
           </p>
         </div>

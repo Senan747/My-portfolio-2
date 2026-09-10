@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsArrowDown } from "react-icons/bs";
 import { HashLink as Link } from "react-router-hash-link";
@@ -14,13 +13,13 @@ function Introduce() {
         <p className="pr-2 text-inherit">{t("introduce")}</p>
       </Header>
       <div className="flex flex-col justify-between">
-        <div className="w-full flex flex-col mb-10 max-md:mb-0 text-gega-light">
+        <div className="w-full flex flex-col mb-10 max-md:mb-0 text-zinc-600 dark:text-gega-light">
           <p className="text-7xl pb-8 max-md:text-5xl text-inherit">
             {t("me")}{" "}
             <span className="text-gega-green">{t("full-name")}, </span>
-            Front-end Developer.
+            {t("roleLine1")} {t("roleLine2")}.
           </p>
-          <p className="text-gega-light font-Inter">{t("info1")}</p>
+          <p className="text-zinc-600 dark:text-gega-light font-Inter">{t("info1")}</p>
         </div>
         <div className="dark:flex hidden justify-end pb-20 mt-20">
           <div className="relative inline-block">
@@ -32,7 +31,7 @@ function Introduce() {
               className="inline-block text-center"
             >
               <img
-                src="../round-text.png"
+                src="/round-text.png"
                 alt=""
                 className="block animate-[spin_4s_linear_infinite]"
               />

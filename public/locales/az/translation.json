@@ -7,13 +7,29 @@
   "blogs": "Bloglar",
   "name": "Sənan",
   "hire": "İşə al",
-  "cv": "CV-ni aç",
   "full-name": "Sənan Məmmədov",
   "me": "Mən",
-  "info1": "Mən veb sayt yaratmağı çox sevirəm. Müxtəlif layihələrim var. Hər gün bacarıqlarımı inkişaf etdirməyə çalışıram. Ümid edirəm ki, portfelimdən zövq alacaqsınız",
+  "roleLine1": "Full-Stack",
+  "roleLine2": "Developer",
+  "info1": "PHP/Laravel və React ilə full-stack veb tətbiqlər qururam. Hər gün bacarıqlarımı inkişaf etdirməyə çalışıram. Ümid edirəm ki, portfelimdən zövq alacaqsınız",
   "start": "Hər şey",
   "start2": "biraz araşdırma ilə başladı",
-  "about2": "İT sahələri ilə maraqlandım və müəyyən araşdırmalardan sonra Front-end inkişafı ilə məşğul olmaq qərarına gəldim. Təxminən 2022-ci ilin noyabrı idi. Front-end mənim dərin həvəsim olan sahədir. Bu sahədə işləmək mənim dəyər verdiyim bir neçə keyfiyyəti özündə cəmləşdirir. Front-end mənə istifadəçilərin qarşılıqlı əlaqə qura biləcəyi vizual cəlbedici və təsirli interfeyslər yaratmağa imkan verir. Front-end-ə olan sevgim artdı, çünki o, mənə yaradıcı ideyalarımı formalaşdırmaq və dizayn etmək imkanı verir. İstifadəçi təcrübələrini təkmilləşdirmək və sadə, intuitiv interfeyslər yaratmaq mənim əsas məqsədlərimdəndir. Mən həmişə insanlarla əlaqə saxlamağa və onların problemlərinin həllinə kömək etməyə can atıram. Front-end dünyasında davamlı öyrənmə mənim üçün ömürlük səyahət kimidir. Dəyişən texnologiyalara və yaranan tendensiyalara uyğunlaşma bu sahədə təbii tələbdir. Bu o deməkdir ki, mən daim yenilənmək və özümü daha da inkişaf etdirmək üçün həyəcanlıyam. Nəhayət, Front-end-i sevməyimin ən mühüm səbəblərindən biri odur ki, o, yaradıcı ideyalarımı başqaları ilə bölüşməyə imkan verir. Bu sahədə işləmək mənə özümü ifadə etməyə və vizual konsepsiyalarımı digər insanlarla bölüşməyə davam etməyə imkan verir.",
+  "about2": "İT sahələri ilə maraqlandım və müəyyən araşdırmalardan sonra Front-end inkişafı ilə məşğul olmaq qərarına gəldim. Təxminən 2022-ci ilin noyabrı idi. Zamanla bu maraq backend-ə də yayıldı və bu gün 2 ildən artıq təcrübəyə malik Full-Stack Developer kimi Laravel/CodeIgniter backend-lərini React frontend-ləri ilə birləşdirərək uçdan-uca funksiyalar qururam. RESTful API-lar yazır, autentifikasiya və struktur xəta idarəetməsi tətbiq edirəm, MySQL sorğularını indekslər vasitəsilə optimallaşdırıram. Deployment prosesini də özüm idarə edirəm — Ubuntu server-lərdə Nginx/Apache konfiqurasiyası, SSL sertifikatları, cron job-lar və SSH vasitəsilə log/performans monitorinqi. İstifadəçi təcrübələrini təkmilləşdirmək və sadə, etibarlı interfeyslər yaratmaq mənim əsas məqsədlərimdəndir. Davamlı öyrənmə mənim üçün ömürlük səyahətdir — dəyişən texnologiyalara uyğunlaşmaq bu sahədə təbii tələbdir. Kod review-larda fəal iştirak edir, komanda yoldaşlarımla clean-code standartlarını qorumaq üçün fikir mübadiləsi aparıram.",
   "resume": "Xülasə",
-  "experience": "Təcrübə"
+  "experience": "Təcrübə",
+  "moreProjects": "Daha çox",
+  "menu": "Menyu",
+  "readMore": "Daha çox oxu",
+  "blogRtkQueryTitle": "RTK Query ilə Data Fetching",
+  "blogRtkQueryExcerpt": "Redux Toolkit Query-nin API sorğularını necə sadələşdirdiyi haqqında",
+  "blogMasonryTitle": "Masonry Layout-lar",
+  "blogMasonryExcerpt": "CSS ilə Pinterest tərzi masonry grid necə qurulur",
+  "skillCategories": {
+    "languages": "Dillər",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Verilənlər bazası",
+    "devops": "Server & DevOps",
+    "tools": "Alətlər"
+  }
 }
